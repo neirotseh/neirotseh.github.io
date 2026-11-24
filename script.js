@@ -102,6 +102,11 @@
       handle.style.transform = "translateX(" + (p - 50) + "%)";
     }
     range.addEventListener("input", function () { set(range.value); });
+    var stage = slot.querySelector(".ba__stage") || slot, drag = false;
+    function fromX(x) { var r = stage.getBoundingClientRect(); var v = Math.round((x - r.left) / r.width * 100); range.value = v; set(v); }
+    stage.addEventListener("pointerdown", function (e) { drag = true; fromX(e.clientX); try { stage.setPointerCapture(e.pointerId); } catch (_) {} });
+    stage.addEventListener("pointermove", function (e) { if (drag) fromX(e.clientX); }, { passive: true });
+    ["pointerup", "pointercancel"].forEach(function (t) { stage.addEventListener(t, function () { drag = false; }); });
     set(range.value);
   });
 })();

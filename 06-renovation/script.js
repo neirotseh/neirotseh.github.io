@@ -110,6 +110,13 @@
     cancelAnimationFrame(raf);
     raf = requestAnimationFrame(() => ba.style.setProperty('--p', baR.value));
   });
+  // перетаскивание пальцем/мышью по всей картинке (iOS не двигает range по тапу на дорожку)
+  let dragBA = false;
+  const fromX = x => { const r = ba.getBoundingClientRect(); const v = Math.max(0, Math.min(100, Math.round((x - r.left) / r.width * 100)));
+    baR.value = v; ba.style.setProperty('--p', v); };
+  ba.addEventListener('pointerdown', e => { dragBA = true; fromX(e.clientX); try { ba.setPointerCapture(e.pointerId); } catch (_) {} });
+  ba.addEventListener('pointermove', e => { if (dragBA) fromX(e.clientX); }, { passive: true });
+  ['pointerup', 'pointercancel'].forEach(t => ba.addEventListener(t, () => { dragBA = false; }));
   function showCase(i, first) {
     const c = CASES[i], info = $('#caseInfo');
     const apply = () => {
