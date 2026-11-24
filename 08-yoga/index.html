@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Тихая гавань — йога и велнес-студия в Казани</title>
+<meta name="description" content="Студия йоги «Тихая гавань» в Казани: хатха, йога-нидра, растяжка, медитация и йога для спины. Расписание на неделю, абонементы, запись на первое занятие.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header" id="top">
+  <div class="wrap header__in">
+    <a href="#top" class="logo" aria-label="Тихая гавань — на главную">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 24c4-3 8-3 12 0s8 3 12 0M11 29c3-2 6-2 9 0s6 2 9 0" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="20" cy="14" r="4" fill="currentColor"/></svg>
+      <span>Тихая гавань</span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Основное меню">
+      <a href="#practices">Направления</a>
+      <a href="#schedule">Расписание</a>
+      <a href="#team">Тренеры</a>
+      <a href="#prices">Абонементы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a href="#signup" class="btn btn--sm header__cta">Записаться</a>
+    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="hero">
+  <div class="blobs" aria-hidden="true">
+    <span class="blob blob--1"></span><span class="blob blob--2"></span><span class="blob blob--3"></span><span class="blob blob--4"></span>
+  </div>
+  <div class="wrap hero__in">
+    <div class="hero__text">
+      <p class="eyebrow">Йога и велнес · Казань, Вахитовский район</p>
+      <h1>Место, где можно <em>выдохнуть</em></h1>
+      <p class="lead">Небольшие группы до 12 человек, теплый зал с видом на Казанку и тренеры, которые помнят ваше имя. Приходите после работы или до нее — расписание с 7:30 до 21:30.</p>
+      <div class="hero__btns">
+        <a href="#signup" class="btn">Первое занятие за 500 ₽</a>
+        <a href="#schedule" class="btn btn--ghost">Смотреть расписание</a>
+      </div>
+      <ul class="hero__facts">
+        <li><b>6 лет</b><span>работаем с 2020 года</span></li>
+        <li><b>32</b><span>занятия в неделю</span></li>
+        <li><b>до 12</b><span>человек в группе</span></li>
+      </ul>
+    </div>
+    <figure class="hero__photo ph ph--hero">
+      <img src="img/hero.jpg" alt="Светлый зал студии с ковриками и растениями в утреннем свете" width="1200" height="1500" onerror="this.classList.add('is-missing')">
+      <figcaption class="hero__badge"><span class="dot"></span>Сегодня еще 4 свободных занятия</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section" id="practices">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Направления</p>
+      <h2>Пять практик для разного настроения</h2>
+      <p class="head__sub">Не нужно быть гибким, чтобы начать. Каждое занятие можно адаптировать под ваш уровень и самочувствие.</p>
+    </div>
+    <div class="practices">
+      <article class="pcard pcard--wide">
+        <div class="ph ph--a"><img src="img/practice-hatha.jpg" alt="Группа выполняет позу воина на хатха-йоге" loading="lazy" decoding="async" onerror="this.classList.add('is-missing')"></div>
+        <div class="pcard__body">
+          <h3>Хатха-йога</h3>
+          <p>Классические асаны в спокойном темпе, внимание к дыханию и выравниванию. Основа, с которой удобно начинать.</p>
+          <p class="pcard__meta">75 минут · все уровни</p>
+        </div>
+      </article>
+      <article class="pcard">
+        <div class="pcard__icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M8 32c6-8 26-8 32 0" /><path d="M14 26c2-6 18-6 20 0"/><circle cx="24" cy="16" r="4"/></svg></div>
+        <h3>Йога-нидра</h3>
+        <p>Глубокое осознанное расслабление лежа. Помогает при бессоннице и после тяжелой недели.</p>
+        <p class="pcard__meta">60 минут · без подготовки</p>
+      </article>
+      <article class="pcard">
+        <div class="ph ph--b"><img src="img/practice-stretch.jpg" alt="Девушка на растяжке у окна" loading="lazy" decoding="async" onerror="this.classList.add('is-missing')"></div>
+        <div class="pcard__body">
+          <h3>Растяжка</h3>
+          <p>Мягкая работа с подвижностью суставов и гибкостью мышц, без рывков и боли.</p>
+          <p class="pcard__meta">60 минут · все уровни</p>
+        </div>
+      </article>
+      <article class="pcard">
+        <div class="ph ph--c"><img src="img/practice-meditation.jpg" alt="Медитация в зале со свечами" loading="lazy" decoding="async" onerror="this.classList.add('is-missing')"></div>
+        <div class="pcard__body">
+          <h3>Медитация</h3>
+          <p>Практики внимания и дыхания сидя. Учимся замечать мысли и не следовать за каждой.</p>
+          <p class="pcard__meta">45 минут · без подготовки</p>
+        </div>
+      </article>
+      <article class="pcard pcard--accent">
+        <div class="pcard__icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M24 6v36"/><path d="M18 12h12M17 20h14M18 28h12M19 36h10"/></svg></div>
+        <h3>Йога для спины</h3>
+        <p>Укрепление мышц кора и разгрузка поясницы. Подходит тем, кто много сидит. При грыжах — после консультации с врачом.</p>
+        <p class="pcard__meta">60 минут · начальный</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section--peach" id="schedule">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Расписание</p>
+      <h2>Неделя в студии</h2>
+      <p class="head__sub">Выберите день и направление. Нажмите «Записаться» на карточке — занятие подставится в форму.</p>
+    </div>
+    <div class="sched-controls">
+      <div class="days" role="tablist" aria-label="Дни недели" id="days"></div>
+      <div class="filters" role="group" aria-label="Фильтр по направлению" id="filters"></div>
+    </div>
+    <div class="sched" id="sched" aria-live="polite"></div>
+  </div>
+</section>
+
+<section class="section" id="team">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Тренеры</p>
+      <h2>Люди, с которыми спокойно</h2>
+    </div>
+    <div class="team">
+      <article class="tcard">
+        <div class="ph ph--t1"><img src="img/trainer-alina.jpg" alt="Алина Гарифуллина, тренер по хатха-йоге" loading="lazy" decoding="async" onerror="this.classList.add('is-missing')"></div>
+        <h3>Алина Гарифуллина</h3>
+        <p class="tcard__role">Хатха, йога для спины</p>
+        <p>Преподает 9 лет, прошла обучение по программе Iyengar-подхода. Бывший инженер-проектировщик — объясняет асаны точно и по шагам.</p>
+      </article>
+      <article class="tcard">
+        <div class="ph ph--t2"><img src="img/trainer-rustem.jpg" alt="Рустем Ахметов, тренер по медитации и йога-нидре" loading="lazy" decoding="async" onerror="this.classList.add('is-missing')"></div>
+        <h3>Рустем Ахметов</h3>
+        <p class="tcard__role">Медитация, йога-нидра</p>
+        <p>Практикует 15 лет, ведет курсы по снижению стресса для сотрудников IT-компаний. Голос, под который засыпают на нидре.</p>
+      </article>
+      <article class="tcard">
+        <div class="ph ph--t3"><img src="img/trainer-elena.jpg" alt="Елена Сорокина, тренер по растяжке" loading="lazy" decoding="async" onerror="this.classList.add('is-missing')"></div>
+        <h3>Елена Сорокина</h3>
+        <p class="tcard__role">Растяжка, хатха</p>
+        <p>Мастер спорта по художественной гимнастике, 22 года тренерского стажа. Знает, как растягиваться бережно — в любом возрасте.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section--green" id="prices">
+  <div class="wrap">
+    <div class="head head--light">
+      <p class="eyebrow">Абонементы</p>
+      <h2>Платите за то, что подходит вашему ритму</h2>
+    </div>
+    <div class="prices">
+      <article class="price">
+        <h3>Разовое</h3>
+        <p class="price__val">900 ₽</p>
+        <p class="price__note">одно любое занятие</p>
+        <ul><li>Коврик и пледы студии</li><li>Чай после практики</li><li>Действует 14 дней</li></ul>
+        <a href="#signup" class="btn btn--ghost-light" data-plan="Разовое">Выбрать</a>
+      </article>
+      <article class="price price--hit">
+        <span class="price__tag">Чаще выбирают</span>
+        <h3>8 занятий</h3>
+        <p class="price__val">5 600 ₽</p>
+        <p class="price__note">700 ₽ за занятие · 5 недель</p>
+        <ul><li>Любые направления</li><li>Одна заморозка до 7 дней</li><li>Гостевое занятие для друга</li></ul>
+        <a href="#signup" class="btn" data-plan="8 занятий">Выбрать</a>
+      </article>
+      <article class="price">
+        <h3>Безлимит на месяц</h3>
+        <p class="price__val">8 900 ₽</p>
+        <p class="price__note">сколько угодно занятий · 30 дней</p>
+        <ul><li>Приоритетная запись</li><li>Заморозка до 14 дней</li><li>Скидка 10% на семинары</li></ul>
+        <a href="#signup" class="btn btn--ghost-light" data-plan="Безлимит на месяц">Выбрать</a>
+      </article>
+    </div>
+    <p class="prices__foot">Первое пробное занятие — 500 ₽. Пенсионерам и студентам скидка 15% на абонементы по будням до 16:00.</p>
+  </div>
+</section>
+
+<section class="section" id="first">
+  <div class="wrap first">
+    <div class="first__photo ph ph--tea"><img src="img/interior-tea.jpg" alt="Чайная зона студии с низким столиком и чайником" loading="lazy" decoding="async" onerror="this.classList.add('is-missing')"></div>
+    <div class="first__text">
+      <p class="eyebrow">Первое занятие</p>
+      <h2>Как прийти в первый раз</h2>
+      <ol class="steps">
+        <li><b>Запишитесь заранее.</b> Выберите занятие с пометкой «начальный» или «все уровни» — тренер будет знать, что вы новичок.</li>
+        <li><b>Не ешьте плотно за 2 часа.</b> Легкий перекус за час — можно. Воду возьмите с собой.</li>
+        <li><b>Возьмите удобную одежду.</b> Леггинсы или свободные брюки, футболка. Заниматься будем босиком.</li>
+        <li><b>Приходите за 15 минут.</b> Переоденетесь, заполните короткую анкету о самочувствии, выберете место в зале.</li>
+      </ol>
+      <div class="first__note">
+        <p><b>Коврики, блоки, ремни и пледы</b> — у нас есть все. Душ и фен в раздевалке, а после практики — травяной чай в чайной зоне.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--cream" id="reviews">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Отзывы</p>
+      <h2>Что говорят ученики</h2>
+    </div>
+    <div class="reviews">
+      <blockquote class="review">
+        <p>Пришла с болью в пояснице после восьми часов за компьютером. Через полтора месяца йоги для спины забыла, где лежит обезболивающее. Алина очень внимательна к деталям.</p>
+        <footer><b>Динара, 34 года</b><span>ходит 1,5 года</span></footer>
+      </blockquote>
+      <blockquote class="review">
+        <p>Йога-нидра по пятницам — лучшее, что случилось с моим сном. Засыпаю прямо на коврике, и никто не осуждает. Чай с чабрецом после — отдельная радость.</p>
+        <footer><b>Андрей, 41 год</b><span>ходит 8 месяцев</span></footer>
+      </blockquote>
+      <blockquote class="review">
+        <p>Мне 63, боялась, что буду самой неуклюжей. Елена подобрала облегченные варианты, и через три месяца я впервые дотянулась до пальцев ног. Группа очень доброжелательная.</p>
+        <footer><b>Галина Петровна</b><span>ходит 1 год</span></footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="section section--peach" id="signup">
+  <div class="wrap signup">
+    <div class="signup__text">
+      <p class="eyebrow">Запись</p>
+      <h2>Запишитесь на занятие</h2>
+      <p>Администратор перезвонит в течение 30 минут в рабочее время и подтвердит место. Отменить запись можно бесплатно за 4 часа до начала.</p>
+      <div class="signup__chosen" id="chosen" hidden></div>
+    </div>
+    <form class="form" id="form" novalidate>
+      <label class="field"><span>Ваше имя</span><input type="text" name="name" required autocomplete="name" placeholder="Например, Анна"></label>
+      <label class="field"><span>Телефон</span><input type="tel" name="phone" required autocomplete="tel" placeholder="+7 (900) 000-00-00" inputmode="tel"></label>
+      <label class="field"><span>Занятие</span><select name="lesson" id="lesson" required><option value="">Выберите занятие из расписания</option></select></label>
+      <label class="field"><span>Абонемент</span><select name="plan" id="plan"><option>Пробное — 500 ₽</option><option>Разовое</option><option>8 занятий</option><option>Безлимит на месяц</option></select></label>
+      <label class="check"><input type="checkbox" name="agree" required checked><span>Согласен на обработку персональных данных</span></label>
+      <button type="submit" class="btn btn--full">Отправить заявку</button>
+      <p class="form__msg" id="formMsg" role="status"></p>
+    </form>
+  </div>
+</section>
+
+<section class="section" id="contacts">
+  <div class="wrap contacts">
+    <div>
+      <p class="eyebrow">Контакты</p>
+      <h2>Как нас найти</h2>
+      <dl class="cinfo">
+        <dt>Адрес</dt><dd>Казань, ул. Тихая набережная, 12, 3 этаж<br>5 минут пешком от метро «Кремлевская»</dd>
+        <dt>Телефон</dt><dd><a href="tel:+79000000000">+7 (900) 000-00-00</a></dd>
+        <dt>Телеграм</dt><dd><a href="#">@example</a></dd>
+        <dt>Часы работы</dt><dd>Пн–Пт 7:00–22:00, Сб–Вс 9:00–20:00</dd>
+      </dl>
+    </div>
+    <div class="map" role="img" aria-label="Схема проезда к студии">
+      <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <rect width="400" height="300" fill="#F3E6D8"/>
+        <path d="M-10 230 C 80 200, 160 260, 250 220 S 380 180, 420 200 L 420 310 L -10 310 Z" fill="#cfdcd2"/>
+        <path d="M0 120 H400 M140 0 V300 M280 0 V230" stroke="#fff" stroke-width="10"/>
+        <path d="M0 60 L400 170" stroke="#fff" stroke-width="6"/>
+        <circle cx="140" cy="120" r="10" fill="#2F4A3E"/><text x="156" y="108" font-family="Inter" font-size="12" fill="#2F4A3E">м. Кремлевская</text>
+        <circle cx="262" cy="150" r="16" fill="#E8A87C" opacity=".35"/><circle cx="262" cy="150" r="7" fill="#C06A3A"/>
+        <text x="200" y="185" font-family="Inter" font-size="13" font-weight="600" fill="#2F4A3E">Тихая гавань</text>
+        <text x="40" y="270" font-family="Cormorant" font-style="italic" font-size="18" fill="#2F4A3E">р. Казанка</text>
+      </svg>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__in">
+    <a href="#top" class="logo logo--light"><span>Тихая гавань</span></a>
+    <p>Йога и велнес-студия в Казани. Занятия не заменяют лечение — при хронических заболеваниях посоветуйтесь с врачом.</p>
+    <p class="footer__copy">© 2026 Тихая гавань · ИП Вымышленная А. А.</p>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

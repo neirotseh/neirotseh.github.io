@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nail Room Вера — маникюр и педикюр в Казани</title>
+  <meta name="description" content="Домашняя студия маникюра Веры в Казани: аккуратное покрытие, наращивание, дизайн и педикюр. Стерильные инструменты, честный прайс, запись онлайн.">
+  <meta name="theme-color" content="#5B3A4A">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">К содержанию</a>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="#top" aria-label="Nail Room Вера — наверх">
+        <span class="logo__drop" aria-hidden="true"></span>
+        <span>Nail Room <em>Вера</em></span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Основная навигация">
+        <a href="#services">Услуги</a>
+        <a href="#works">Работы</a>
+        <a href="#palette">Палитра</a>
+        <a href="#why">Почему я</a>
+        <a href="#reviews">Отзывы</a>
+        <a class="btn btn--small" href="#booking">Записаться</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <p class="eyebrow">Домашняя студия · Казань, Ново-Савиновский район</p>
+          <h1 class="title shimmer" data-text="Маникюр, который держится три недели">Маникюр, который держится три недели</h1>
+          <p class="lead">Привет, я Вера. Делаю аккуратный маникюр без спешки: один клиент в комнате, стерильные инструменты, кофе или чай — на ваш выбор.</p>
+          <div class="hero__actions">
+            <a class="btn" href="#booking">Записаться онлайн</a>
+            <a class="btn btn--ghost" href="#services">Смотреть прайс</a>
+          </div>
+          <ul class="hero__facts">
+            <li><b>6 лет</b><span>в профессии</span></li>
+            <li><b>1 400+</b><span>клиенток</span></li>
+            <li><b>21 день</b><span>гарантия на покрытие</span></li>
+          </ul>
+          <p class="hero__offer">Первый визит — <b>−15%</b> на маникюр с покрытием</p>
+        </div>
+        <div class="hero__media">
+          <div class="hero__frame">
+            <img src="img/vera.jpg" alt="Мастер маникюра Вера за рабочим столом в светлой студии" width="1024" height="1536" fetchpriority="high">
+          </div>
+          <span class="hdrop hdrop--1" aria-hidden="true"></span>
+          <span class="hdrop hdrop--2" aria-hidden="true"></span>
+          <span class="hdrop hdrop--3" aria-hidden="true"></span>
+          <p class="hero__badge">Свободные окна<br><b>на этой неделе</b></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Услуги и прайс</p>
+          <h2 class="title">Честные цены без доплат «за форму»</h2>
+          <p class="muted">Снятие старого покрытия включено в стоимость. Длительность — ориентировочная.</p>
+        </div>
+        <div class="tabs" role="tablist" aria-label="Категории услуг">
+          <button class="tab is-active" role="tab" aria-selected="true" data-tab="mani">Маникюр</button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="ext">Наращивание</button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="art">Дизайн</button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="pedi">Педикюр</button>
+        </div>
+
+        <div class="price is-active" data-panel="mani" role="tabpanel">
+          <div class="price__row"><div><h3>Маникюр без покрытия</h3><p>Комбинированный, форма, кутикула, масло</p></div><span class="price__time">60 мин</span><b>1 000 ₽</b></div>
+          <div class="price__row"><div><h3>Маникюр + гель-лак</h3><p>Выравнивание базой, однотонное покрытие</p></div><span class="price__time">2 ч</span><b>2 000 ₽</b></div>
+          <div class="price__row"><div><h3>Маникюр + френч / омбре</h3><p>Классический или цветной френч, градиент</p></div><span class="price__time">2,5 ч</span><b>2 400 ₽</b></div>
+          <div class="price__row"><div><h3>Укрепление гелем</h3><p>Для тонких и ломких ногтей</p></div><span class="price__time">+20 мин</span><b>+400 ₽</b></div>
+          <div class="price__row"><div><h3>Мужской маникюр</h3><p>Гигиенический, полировка, матовое укрепление</p></div><span class="price__time">60 мин</span><b>1 200 ₽</b></div>
+        </div>
+        <div class="price" data-panel="ext" role="tabpanel" hidden>
+          <div class="price__row"><div><h3>Наращивание, длина S–M</h3><p>Гель на верхние формы, покрытие в цвет</p></div><span class="price__time">3 ч</span><b>3 200 ₽</b></div>
+          <div class="price__row"><div><h3>Наращивание, длина L–XL</h3><p>Миндаль, балерина, квадрат</p></div><span class="price__time">3,5 ч</span><b>3 800 ₽</b></div>
+          <div class="price__row"><div><h3>Коррекция наращивания</h3><p>До 4 недель после процедуры</p></div><span class="price__time">2,5 ч</span><b>2 700 ₽</b></div>
+          <div class="price__row"><div><h3>Ремонт одного ногтя</h3><p>Если сломался между визитами</p></div><span class="price__time">15 мин</span><b>150 ₽</b></div>
+        </div>
+        <div class="price" data-panel="art" role="tabpanel" hidden>
+          <div class="price__row"><div><h3>Минимал-арт</h3><p>Точки, линии, сердечки — на 2–4 ногтя</p></div><span class="price__time">+15 мин</span><b>+300 ₽</b></div>
+          <div class="price__row"><div><h3>Втирка: хром, перламутр, жемчуг</h3><p>На все ногти</p></div><span class="price__time">+15 мин</span><b>+400 ₽</b></div>
+          <div class="price__row"><div><h3>Ручная роспись</h3><p>Цветы, абстракция — цена за ноготь</p></div><span class="price__time">10 мин</span><b>от 100 ₽</b></div>
+          <div class="price__row"><div><h3>Стемпинг, слайдеры, фольга</h3><p>На все ногти</p></div><span class="price__time">+20 мин</span><b>+350 ₽</b></div>
+        </div>
+        <div class="price" data-panel="pedi" role="tabpanel" hidden>
+          <div class="price__row"><div><h3>Педикюр без покрытия</h3><p>Пальчики, стопы смарт-дисками, масло</p></div><span class="price__time">60 мин</span><b>1 800 ₽</b></div>
+          <div class="price__row"><div><h3>Педикюр + гель-лак</h3><p>Полный, с покрытием в один тон</p></div><span class="price__time">1,5 ч</span><b>2 500 ₽</b></div>
+          <div class="price__row"><div><h3>Экспресс: пальчики + покрытие</h3><p>Без обработки стоп</p></div><span class="price__time">1 ч</span><b>1 900 ₽</b></div>
+          <div class="price__row"><div><h3>Комплекс «руки + ноги»</h3><p>Маникюр и педикюр с покрытием</p></div><span class="price__time">3,5 ч</span><b>4 200 ₽</b></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORKS -->
+    <section class="section section--rose" id="works">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Галерея работ</p>
+          <h2 class="title">От нюда до глубокой сливы</h2>
+        </div>
+        <div class="gallery">
+          <figure class="gallery__item gallery__item--tall"><img src="img/nude.jpg" alt="Нюдовый маникюр миндальной формы" loading="lazy" decoding="async" width="1536" height="1024"><figcaption>Нюд · миндаль</figcaption></figure>
+          <figure class="gallery__item"><img src="img/french.jpg" alt="Классический тонкий френч" loading="lazy" decoding="async" width="1448" height="1086"><figcaption>Тонкий френч</figcaption></figure>
+          <figure class="gallery__item"><img src="img/chrome.jpg" alt="Жемчужный хром — перламутровое втирание на нюдовой базе" loading="lazy" decoding="async" width="1448" height="1086"><figcaption>Жемчужный хром</figcaption></figure>
+          <figure class="gallery__item gallery__item--tall"><img src="img/autumn.jpg" alt="Осенний маникюр глубокого сливового цвета" loading="lazy" decoding="async" width="1024" height="1536"><figcaption>Осень · слива</figcaption></figure>
+          <figure class="gallery__item gallery__item--tall"><img src="img/minimal.jpg" alt="Минималистичный нейл-арт с тонкими линиями и точками" loading="lazy" decoding="async" width="1024" height="1536"><figcaption>Минимал-арт</figcaption></figure>
+          <figure class="gallery__item"><img src="img/mauve.jpg" alt="Омбре в оттенке мов от розового к лиловому" loading="lazy" decoding="async" width="1448" height="1086"><figcaption>Мов · омбре</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- PALETTE -->
+    <section class="section palette" id="palette">
+      <div class="palette__spill" aria-hidden="true"></div>
+      <div class="container palette__inner">
+        <div class="section__head">
+          <p class="eyebrow">Палитра сезона · зима 2026</p>
+          <h2 class="title">Выберите каплю — и примерьте настроение</h2>
+        </div>
+        <div class="drops" role="listbox" aria-label="Оттенки сезона">
+          <button class="drop" role="option" style="--c:#EAD3CB" data-c="#EAD3CB" data-dark="0" data-name="Молочная пудра" data-desc="Почти прозрачный нюд. Идет всем и подходит к офису." aria-selected="true"><span class="sr">Молочная пудра</span></button>
+          <button class="drop" role="option" style="--c:#E0A9A0" data-c="#E0A9A0" data-dark="0" data-name="Пыльная роза" data-desc="Хит сезона: теплый, нежный, хорошо смотрится на короткой длине." aria-selected="false"><span class="sr">Пыльная роза</span></button>
+          <button class="drop" role="option" style="--c:#A67F8E" data-c="#A67F8E" data-dark="1" data-name="Мов" data-desc="Приглушенная лиловая роза. Красиво с серебряными кольцами." aria-selected="false"><span class="sr">Мов</span></button>
+          <button class="drop" role="option" style="--c:#C9B8A6" data-c="#C9B8A6" data-dark="0" data-name="Кашемир" data-desc="Теплый беж-серый — к пальто и шарфам песочных тонов." aria-selected="false"><span class="sr">Кашемир</span></button>
+          <button class="drop" role="option" style="--c:#8E3B46" data-c="#8E3B46" data-dark="1" data-name="Вишневый глинтвейн" data-desc="Глубокий красный с винным подтоном — для праздников." aria-selected="false"><span class="sr">Вишневый глинтвейн</span></button>
+          <button class="drop" role="option" style="--c:#5B3A4A" data-c="#5B3A4A" data-dark="1" data-name="Слива" data-desc="Темный и бархатный. Лучше всего на коротких овальных ногтях." aria-selected="false"><span class="sr">Слива</span></button>
+          <button class="drop" role="option" style="--c:#6E7A6A" data-c="#6E7A6A" data-dark="1" data-name="Зимний шалфей" data-desc="Неожиданный, но мягкий зеленый — для тех, кто устал от нюда." aria-selected="false"><span class="sr">Зимний шалфей</span></button>
+        </div>
+        <div class="palette__card" aria-live="polite">
+          <h3 class="palette__name" id="pName">Молочная пудра</h3>
+          <p class="palette__desc" id="pDesc">Почти прозрачный нюд. Идет всем и подходит к офису.</p>
+          <a class="btn btn--small" href="#booking" id="pBook">Хочу этот цвет</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY -->
+    <section class="section" id="why">
+      <div class="container why">
+        <div class="why__media">
+          <img class="why__img" src="img/workplace.jpg" alt="Рабочее место мастера: гель-лаки пастельных оттенков и крафт-пакеты со стерильными инструментами" loading="lazy" decoding="async" width="1586" height="992">
+        </div>
+        <div class="why__text">
+          <p class="eyebrow">Почему я</p>
+          <h2 class="title">Спокойно, чисто и по-честному</h2>
+          <ul class="why__list">
+            <li><span class="why__ico">01</span><div><h3>Стерилизация в 3 этапа</h3><p>Дезинфекция, очистка и сухожар 180 °C. Крафт-пакет вскрываю при вас — индикатор на месте.</p></div></li>
+            <li><span class="why__ico">02</span><div><h3>Одноразовое — правда одноразовое</h3><p>Пилки, бафы, салфетки и колпачки для фрезы — новые для каждой клиентки.</p></div></li>
+            <li><span class="why__ico">03</span><div><h3>Проверенные материалы</h3><p>Базы и гели профессиональных брендов, без кислотных праймеров и «гаражных» лаков.</p></div></li>
+            <li><span class="why__ico">04</span><div><h3>Гарантия 21 день</h3><p>Если покрытие отслоилось раньше — исправлю бесплатно, без вопросов.</p></div></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="section section--milk" id="reviews">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Отзывы</p>
+          <h2 class="title">Что говорят клиентки</h2>
+        </div>
+        <div class="reviews">
+          <blockquote class="review">
+            <p>«Хожу к Вере второй год. Покрытие стабильно носится 3,5 недели, ни одного скола. А еще у нее самая уютная студия — как в гостях у подруги».</p>
+            <footer><b>Алсу</b><span>маникюр + гель-лак</span></footer>
+          </blockquote>
+          <blockquote class="review">
+            <p>«Пришла с испорченными после наращивания ногтями. Вера все сняла бережно, сделала укрепление и объяснила, как ухаживать. Через два месяца — свои здоровые ногти».</p>
+            <footer><b>Екатерина</b><span>укрепление гелем</span></footer>
+          </blockquote>
+          <blockquote class="review">
+            <p>«Отдельное спасибо за стерильность: при мне открыла крафт-пакет, все показала. Педикюр — лучший в Казани, без преувеличения».</p>
+            <footer><b>Динара</b><span>педикюр с покрытием</span></footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKING -->
+    <section class="section booking" id="booking">
+      <div class="container booking__grid">
+        <div class="booking__text">
+          <p class="eyebrow">Онлайн-запись</p>
+          <h2 class="title">Запишитесь на удобное время</h2>
+          <p>Оставьте заявку — я подтвержу запись в течение часа в Telegram или по телефону. Адрес и код домофона пришлю перед визитом.</p>
+          <ul class="booking__info">
+            <li>Пн–Сб, 10:00–21:00</li>
+            <li>ул. Ямашева, 10 минут от м. «Козья слобода»</li>
+            <li>Оплата картой, наличными или по СБП</li>
+          </ul>
+        </div>
+        <form class="form" id="form" novalidate>
+          <label class="field"><span>Услуга</span>
+            <select name="service" id="service" required>
+              <option value="">Выберите услугу</option>
+              <option>Маникюр без покрытия — 1 000 ₽</option>
+              <option>Маникюр + гель-лак — 2 000 ₽</option>
+              <option>Маникюр + френч / омбре — 2 400 ₽</option>
+              <option>Наращивание S–M — 3 200 ₽</option>
+              <option>Коррекция наращивания — 2 700 ₽</option>
+              <option>Педикюр + гель-лак — 2 500 ₽</option>
+              <option>Комплекс «руки + ноги» — 4 200 ₽</option>
+            </select>
+          </label>
+          <div class="form__row">
+            <label class="field"><span>Дата</span><input type="date" name="date" id="date" required></label>
+            <label class="field"><span>Время</span>
+              <select name="time" id="time" required>
+                <option value="">—</option>
+                <option>10:00</option><option>12:30</option><option>15:00</option><option>17:30</option><option>19:00</option>
+              </select>
+            </label>
+          </div>
+          <label class="field"><span>Имя</span><input type="text" name="name" id="name" autocomplete="given-name" placeholder="Как к вам обращаться" required></label>
+          <label class="field"><span>Телефон</span><input type="tel" name="phone" id="phone" autocomplete="tel" placeholder="+7 (900) 000-00-00" required></label>
+          <label class="field"><span>Пожелания по цвету</span><input type="text" name="color" id="color" placeholder="Например: пыльная роза"></label>
+          <button class="btn btn--full" type="submit">Отправить заявку</button>
+          <p class="form__msg" id="formMsg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a class="logo logo--light" href="#top"><span class="logo__drop" aria-hidden="true"></span><span>Nail Room <em>Вера</em></span></a>
+      <p>Казань, ул. Ямашева · Пн–Сб 10:00–21:00</p>
+      <p><a href="tel:+79000000000">+7 (900) 000-00-00</a> · Telegram <a href="#">@example</a></p>
+      <p class="footer__copy">© 2026 Nail Room Вера. Демо-сайт, бренд вымышленный.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

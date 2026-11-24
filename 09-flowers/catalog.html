@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Каталог букетов — Ботаника, Казань</title>
+<meta name="description" content="Каталог букетов с фильтрами по поводу, цене и цвету. Доставка по Казани за 2 часа.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='20' r='19' fill='%23F1D9D5'/%3E%3Ccircle cx='20' cy='16' r='6' fill='%234D5B3F'/%3E%3C/svg%3E">
+</head>
+<body>
+<a class="sr" href="#main">К содержимому</a>
+<header class="header">
+  <div class="wrap header__in">
+    <a class="logo" href="index.html" aria-label="Ботаника — на главную">
+      <svg class="logo__mark" viewBox="0 0 40 40" fill="none" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="#F1D9D5"/><path d="M20 31V18" stroke="#4D5B3F" stroke-width="1.6" stroke-linecap="round"/><path d="M20 24c-4.5 0-7-2.5-7.5-6.5 4.5 0 7 2.5 7.5 6.5z" fill="#4D5B3F"/><path d="M20 21c4 0 6.5-2.3 7-6-4 0-6.5 2.3-7 6z" fill="#7C8D69"/><circle cx="20" cy="13" r="3.4" fill="#E4BDB6" stroke="#4D5B3F" stroke-width="1.2"/></svg>
+      <span class="logo__name">Ботаника</span><span class="logo__city">Казань</span>
+    </a>
+    <nav class="nav" aria-label="Основное меню">
+      <a href="index.html">Главная</a>
+      <a href="catalog.html" aria-current="page">Каталог</a>
+      <a href="about.html">О нас</a>
+      <a href="about.html#delivery">Доставка и оплата</a>
+    </nav>
+    <a class="header__phone" href="tel:+79000000000">+7 (900) 000-00-00</a>
+    <button class="cart-btn" type="button" aria-label="Корзина" aria-controls="cart">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#343F2A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8L5 8z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg>
+      <span class="cart-count" aria-hidden="true">0</span>
+    </button>
+    <button class="burger" type="button" aria-label="Меню" aria-expanded="false" aria-controls="mnav"><span></span></button>
+  </div>
+</header>
+<nav class="mnav" id="mnav" aria-label="Мобильное меню">
+  <a href="index.html">Главная</a>
+  <a href="catalog.html">Каталог букетов</a>
+  <a href="about.html">О нас</a>
+  <a href="about.html#delivery">Доставка и оплата</a>
+  <p>Ежедневно 8:00–22:00 · <a href="tel:+79000000000" style="display:inline;font:inherit;border:0;padding:0">+7 (900) 000-00-00</a></p>
+</nav>
+<main id="main">
+  <section class="page-head">
+    <div class="wrap">
+      <div class="crumbs"><a href="index.html">Главная</a> / Каталог</div>
+      <h1>Каталог букетов</h1>
+      <p>Все букеты собираем в день заказа. Состав может немного меняться по сезону — оттенок и настроение сохраним.</p>
+    </div>
+  </section>
+  <div class="wrap shop">
+    <details class="filters" id="filters">
+      <summary>Фильтры</summary>
+      <div class="fgroup">
+        <h3>Повод</h3>
+        <div class="chips">
+          <button class="chip" type="button" data-occ="all" aria-pressed="true">Все</button>
+          <button class="chip" type="button" data-occ="birthday" aria-pressed="false">День рождения</button>
+          <button class="chip" type="button" data-occ="wedding" aria-pressed="false">Свадьба</button>
+          <button class="chip" type="button" data-occ="simply" aria-pressed="false">Просто так</button>
+        </div>
+      </div>
+      <div class="fgroup">
+        <h3><label for="price">Цена</label></h3>
+        <input class="range" id="price" type="range" min="2000" max="10000" step="100" value="10000">
+        <div class="range-val"><span>от 2 000 ₽</span><b id="price-out">до 10 000 ₽</b></div>
+      </div>
+      <div class="fgroup">
+        <h3>Цвет</h3>
+        <div class="colors">
+          <label class="color"><input type="checkbox" name="color" value="pink"><span style="--c:#EDB8B1">Розовый</span></label>
+          <label class="color"><input type="checkbox" name="color" value="white"><span style="--c:#FFFFFF">Белый</span></label>
+          <label class="color"><input type="checkbox" name="color" value="red"><span style="--c:#A8323A">Красный</span></label>
+          <label class="color"><input type="checkbox" name="color" value="yellow"><span style="--c:#F2C94C">Желтый</span></label>
+          <label class="color"><input type="checkbox" name="color" value="beige"><span style="--c:#D9C3A0">Бежевый</span></label>
+          <label class="color"><input type="checkbox" name="color" value="mix"><span style="--c:conic-gradient(#EDB8B1 0 25%,#F2C94C 0 50%,#6D8BC4 0 75%,#9DB094 0)">Микс</span></label>
+        </div>
+      </div>
+      <button class="reset" type="button" data-reset>Сбросить фильтры</button>
+    </details>
+    <div>
+      <div class="toolbar">
+        <span class="toolbar__count" id="found" role="status">Найдено: 15 букетов</span>
+        <label class="sr" for="sort">Сортировка</label>
+        <select class="select" id="sort">
+          <option value="pop">Сначала популярные</option>
+          <option value="asc">Сначала дешевле</option>
+          <option value="desc">Сначала дороже</option>
+          <option value="new">Сначала новинки</option>
+        </select>
+      </div>
+      <div class="grid grid--3" id="catalog-grid"></div>
+      <div class="empty" id="empty"><h3>Таких букетов пока нет</h3><p>Попробуйте расширить цену или выбрать другой цвет. А еще флорист соберет букет под ваш запрос.</p><button class="btn btn--ghost" type="button" data-reset>Сбросить фильтры</button></div>
+    </div>
+  </div>
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div>
+        <a class="logo" href="index.html"><span class="logo__name">Ботаника</span></a>
+        <p style="margin-top:14px;max-width:320px">Цветочная студия в Казани. Собираем букеты из свежих сезонных цветов и привозим за 2 часа.</p>
+      </div>
+      <div><h4>Магазин</h4><ul><li><a href="catalog.html">Каталог</a></li><li><a href="catalog.html?occasion=birthday">На день рождения</a></li><li><a href="catalog.html?occasion=wedding">Свадебные</a></li><li><a href="index.html#subscription">Подписка</a></li></ul></div>
+      <div><h4>Покупателям</h4><ul><li><a href="about.html#delivery">Доставка</a></li><li><a href="about.html#payment">Оплата</a></li><li><a href="about.html#faq">Вопросы</a></li><li><a href="about.html">О студии</a></li></ul></div>
+      <div><h4>Контакты</h4><ul><li><a href="tel:+79000000000">+7 (900) 000-00-00</a></li><li>Telegram: @example</li><li>ул. Садовая, 12, Казань</li><li>Ежедневно 8:00–22:00</li></ul></div>
+    </div>
+    <div class="footer__bottom"><span>© 2026 Цветочная студия «Ботаника»</span><span>Демо-сайт. Бренд вымышленный</span></div>
+  </div>
+</footer>
+<script src="script.js" defer></script>
+</body>
+</html>

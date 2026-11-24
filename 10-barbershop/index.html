@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Борода и Ко — барбершоп в Казани</title>
+<meta name="description" content="Барбершоп «Борода и Ко» в Казани: мужские стрижки, борода, королевское бритье, камуфляж седины. Онлайн-запись к мастеру.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header" id="top">
+  <div class="wrap header__in">
+    <a href="#top" class="logo" aria-label="Борода и Ко — на главную">
+      <span class="logo__mark">Б&amp;К</span>
+      <span class="logo__text">Борода и Ко</span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Основное меню">
+      <a href="#services">Услуги</a>
+      <a href="#masters">Мастера</a>
+      <a href="#works">Работы</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a href="#booking" class="btn btn--small header__cta">Записаться</a>
+    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero__media ph ph--interior">
+    <img src="img/hero.jpg" alt="Интерьер барбершопа с кожаными креслами в теплом свете" onerror="this.hidden=true">
+  </div>
+  <div class="hero__shade"></div>
+  <div class="wrap hero__in">
+    <p class="eyebrow eyebrow--light">Казань · ул. Петербургская, 12 · с 2016 года</p>
+    <h1 class="hero__title" data-split>Спокойный ритуал<br>для мужчины</h1>
+    <p class="hero__lead">Стрижка, борода и бритье опасной бритвой без спешки. Тихий зал на шесть кресел, горячее полотенце, кофе из зерна и мастер, который слушает.</p>
+    <div class="hero__actions">
+      <a href="#booking" class="btn">Записаться онлайн</a>
+      <a href="#services" class="btn btn--ghost">Услуги и цены</a>
+    </div>
+    <ul class="hero__facts">
+      <li><b>4,9</b><span>рейтинг на картах, 640 отзывов</span></li>
+      <li><b>10–22</b><span>ежедневно, без выходных</span></li>
+      <li><b>60 мин</b><span>на стрижку, а не 25</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section services" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Услуги и прайс</p>
+      <h2 class="h2" data-split>Без лишнего. Только ремесло</h2>
+      <p class="sec-head__text">В каждую услугу входят консультация, мытье головы, укладка и горячее полотенце. Цена зависит от уровня мастера.</p>
+    </div>
+
+    <div class="tier" role="radiogroup" aria-label="Уровень мастера">
+      <button class="tier__btn is-active" role="radio" aria-checked="true" data-tier="master">Мастер</button>
+      <button class="tier__btn" role="radio" aria-checked="false" data-tier="top">Топ-мастер</button>
+      <span class="tier__thumb" aria-hidden="true"></span>
+    </div>
+    <p class="tier__note" id="tierNote">Мастер — опыт от 3 лет, уверенно делает классику и фейды.</p>
+
+    <ul class="price" id="priceList"></ul>
+    <p class="price__foot">Скидка 10% на первое посещение по записи онлайн. Отец и сын в одно время — детская стрижка за полцены.</p>
+  </div>
+</section>
+
+<!-- MASTERS -->
+<section class="section masters" id="masters">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow eyebrow--light">Мастера</p>
+      <h2 class="h2" data-split>Четыре руки, которым доверяют</h2>
+      <p class="sec-head__text">Наведите на фото, чтобы увидеть мастера в цвете. У каждого свой почерк — выбирайте по работам, а не по графику.</p>
+    </div>
+    <div class="masters__grid" id="mastersGrid"></div>
+  </div>
+</section>
+
+<!-- WORKS -->
+<section class="section works" id="works">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Галерея работ</p>
+      <h2 class="h2" data-split>Чистые линии, честный результат</h2>
+    </div>
+    <div class="works__grid">
+      <figure class="work work--tall ph ph--work1">
+        <img src="img/work-fade.jpg" alt="Фейд с плавным переходом и текстурой сверху" loading="lazy" decoding="async" onerror="this.hidden=true">
+        <figcaption><b>Скин-фейд</b><span>Тимур · 60 мин</span></figcaption>
+      </figure>
+      <figure class="work ph ph--work2">
+        <img src="img/work-beard.jpg" alt="Аккуратно оформленная густая борода" loading="lazy" decoding="async" onerror="this.hidden=true">
+        <figcaption><b>Борода «лопата»</b><span>Артем · 40 мин</span></figcaption>
+      </figure>
+      <figure class="work ph ph--work3">
+        <img src="img/work-classic.jpg" alt="Классическая стрижка с боковым пробором" loading="lazy" decoding="async" onerror="this.hidden=true">
+        <figcaption><b>Классика с пробором</b><span>Ильдар · 60 мин</span></figcaption>
+      </figure>
+      <figure class="work work--wide ph ph--work4">
+        <img src="img/work-crop.jpg" alt="Короткий кроп с текстурной челкой" loading="lazy" decoding="async" onerror="this.hidden=true">
+        <figcaption><b>Французский кроп</b><span>Денис · 50 мин</span></figcaption>
+      </figure>
+      <figure class="work ph ph--tools">
+        <img src="img/tools.jpg" alt="Опасная бритва, помазок и ножницы на кожаной салфетке" loading="lazy" decoding="async" onerror="this.hidden=true">
+        <figcaption><b>Инструмент</b><span>стерилизация после каждого гостя</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section class="section booking" id="booking">
+  <div class="wrap booking__in">
+    <div class="sec-head">
+      <p class="eyebrow">Онлайн-запись</p>
+      <h2 class="h2" data-split>Запись за минуту</h2>
+      <p class="sec-head__text">Три шага: услуга, мастер, время. Подтвердим запись сообщением и напомним за два часа.</p>
+    </div>
+
+    <form class="book" id="bookForm" novalidate>
+      <ol class="steps" aria-label="Шаги записи">
+        <li class="steps__item is-current" data-step-ind="1"><span>1</span>Услуга</li>
+        <li class="steps__item" data-step-ind="2"><span>2</span>Мастер</li>
+        <li class="steps__item" data-step-ind="3"><span>3</span>Дата и время</li>
+      </ol>
+
+      <div class="book__body">
+        <fieldset class="step is-active" data-step="1">
+          <legend class="step__title">Что делаем?</legend>
+          <div class="opts" id="optServices"></div>
+        </fieldset>
+
+        <fieldset class="step" data-step="2">
+          <legend class="step__title">К кому записать?</legend>
+          <div class="opts opts--masters" id="optMasters"></div>
+        </fieldset>
+
+        <fieldset class="step" data-step="3">
+          <legend class="step__title">Когда удобно?</legend>
+          <div class="days" id="optDays"></div>
+          <div class="slots" id="optSlots"></div>
+          <div class="fields">
+            <label class="field"><span>Имя</span><input type="text" name="name" id="fName" autocomplete="given-name" placeholder="Как к вам обращаться"></label>
+            <label class="field"><span>Телефон</span><input type="tel" name="phone" id="fPhone" autocomplete="tel" placeholder="+7 (900) 000-00-00" inputmode="tel"></label>
+          </div>
+        </fieldset>
+
+        <div class="step step--done" data-step="4" role="status">
+          <p class="done__mark" aria-hidden="true">&#10003;</p>
+          <h3 class="done__title">Спасибо, <span id="doneName">гость</span>!</h3>
+          <p class="done__text" id="doneText"></p>
+          <button type="button" class="btn btn--ghost-dark" id="bookAgain">Новая запись</button>
+        </div>
+      </div>
+
+      <aside class="summary" id="summary" aria-live="polite">
+        <p class="summary__title">Ваша запись</p>
+        <dl>
+          <div><dt>Услуга</dt><dd id="sService">не выбрана</dd></div>
+          <div><dt>Мастер</dt><dd id="sMaster">не выбран</dd></div>
+          <div><dt>Время</dt><dd id="sTime">не выбрано</dd></div>
+        </dl>
+        <p class="summary__total"><span>Итого</span><b id="sTotal">—</b></p>
+        <p class="summary__err" id="bookErr" role="alert"></p>
+        <div class="summary__nav">
+          <button type="button" class="btn btn--ghost-dark" id="bookBack" hidden>Назад</button>
+          <button type="button" class="btn" id="bookNext">Далее</button>
+        </div>
+      </aside>
+    </form>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section reviews" id="reviews">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Отзывы</p>
+      <h2 class="h2" data-split>Возвращаются раз в три недели</h2>
+    </div>
+    <div class="reviews__grid">
+      <blockquote class="review">
+        <p>Хожу к Тимуру третий год. Ни разу не было, чтобы он торопился или спорил. Говорю «как в прошлый раз, но короче на висках» — и получаю ровно это.</p>
+        <footer><b>Руслан, 34</b><span>скин-фейд, раз в 3 недели</span></footer>
+      </blockquote>
+      <blockquote class="review">
+        <p>Королевское бритье у Артема — отдельное удовольствие. Горячие полотенца, тишина, никакой громкой музыки. После работы это лучше любого спа.</p>
+        <footer><b>Олег, 47</b><span>бритье и камуфляж седины</span></footer>
+      </blockquote>
+      <blockquote class="review">
+        <p>Привел сына, ему восемь. Денис нашел к нему подход за пять минут, сын теперь сам просится «к бородатым». Удобно, что можно записаться сразу вдвоем.</p>
+        <footer><b>Айдар, 39</b><span>стрижка + детская</span></footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATE -->
+<section class="section cert" id="cert">
+  <div class="wrap cert__in">
+    <div class="cert__text">
+      <p class="eyebrow eyebrow--light">Подарочный сертификат</p>
+      <h2 class="h2" data-split>Подарок, который носят</h2>
+      <p>Сертификат действует полгода на любые услуги и мастеров. Выдаем в плотном конверте с сургучом или присылаем электронный — в тот же день.</p>
+      <div class="cert__sums" role="radiogroup" aria-label="Номинал сертификата">
+        <button type="button" class="chip is-active" data-sum="3000" role="radio" aria-checked="true">3 000 ₽</button>
+        <button type="button" class="chip" data-sum="5000" role="radio" aria-checked="false">5 000 ₽</button>
+        <button type="button" class="chip" data-sum="10000" role="radio" aria-checked="false">10 000 ₽</button>
+      </div>
+      <form class="cert__form" id="certForm" novalidate>
+        <input type="tel" id="certPhone" placeholder="Ваш телефон" aria-label="Ваш телефон" inputmode="tel">
+        <button class="btn" type="submit">Оформить</button>
+      </form>
+      <p class="cert__msg" id="certMsg" role="status"></p>
+    </div>
+    <div class="cert__card" aria-hidden="true">
+      <div class="gift">
+        <span class="gift__brand">Борода и Ко</span>
+        <span class="gift__label">Подарочный сертификат</span>
+        <span class="gift__sum" id="certSum">3 000 ₽</span>
+        <span class="gift__foot">Казань · действует 6 месяцев</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section class="section contacts" id="contacts">
+  <div class="wrap contacts__in">
+    <div>
+      <p class="eyebrow">Контакты и часы</p>
+      <h2 class="h2" data-split>Заходите на кофе</h2>
+      <ul class="contacts__list">
+        <li><span>Адрес</span>Казань, ул. Петербургская, 12, вход со двора</li>
+        <li><span>Телефон</span><a href="tel:+79000000000">+7 (900) 000-00-00</a></li>
+        <li><span>Telegram</span><a href="#contacts">@example</a></li>
+        <li><span>Парковка</span>Бесплатная во дворе, 6 мест для гостей</li>
+      </ul>
+    </div>
+    <div class="hours">
+      <p class="hours__title">Часы работы</p>
+      <table>
+        <tbody>
+          <tr><td>Понедельник — пятница</td><td>10:00–22:00</td></tr>
+          <tr><td>Суббота</td><td>09:00–22:00</td></tr>
+          <tr><td>Воскресенье</td><td>10:00–20:00</td></tr>
+        </tbody>
+      </table>
+      <p class="hours__note">5 минут пешком от метро «Площадь Тукая». Опоздали больше чем на 15 минут — перенесем без штрафа.</p>
+      <div class="map ph ph--map" aria-hidden="true"><span class="map__pin"></span></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__in">
+    <a href="#top" class="logo logo--light"><span class="logo__mark">Б&amp;К</span><span class="logo__text">Борода и Ко</span></a>
+    <p>Барбершоп в Казани. Стрижки, борода, бритье.</p>
+    <p class="footer__small">© 2026 «Борода и Ко». Демонстрационный сайт, компания вымышлена.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

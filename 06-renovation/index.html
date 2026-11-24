@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Основа — ремонт квартир под ключ в Казани</title>
+<meta name="description" content="Студия ремонта «Основа»: ремонт квартир под ключ в Казани. Фиксированная смета, гарантия 3 года, онлайн-калькулятор стоимости.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&family=Unbounded:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header" id="top">
+  <div class="wrap header__in">
+    <a href="#top" class="logo" aria-label="Основа — на главную">
+      <svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true"><rect x="3" y="20" width="26" height="8" fill="currentColor"/><rect x="7" y="12" width="18" height="6" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M11 10V4h10v6" fill="none" stroke="#B4643C" stroke-width="2.4"/></svg>
+      <span>Основа</span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Разделы">
+      <a href="#calc">Калькулятор</a>
+      <a href="#works">Объекты</a>
+      <a href="#steps">Этапы</a>
+      <a href="#guarantee">Гарантии</a>
+      <a href="#faq">Вопросы</a>
+      <a href="#request" class="nav__cta">Заявка</a>
+    </nav>
+    <a href="tel:+79000000000" class="header__phone">+7 (900) 000-00-00</a>
+    <button class="burger" id="burger" aria-label="Меню" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero__grid">
+    <div class="hero__text">
+      <p class="eyebrow">Ремонт квартир под ключ · Казань</p>
+      <h1>Ремонт по смете, которая <span class="brick">не растет</span> в процессе</h1>
+      <p class="lead">Делаем квартиры в новостройках и вторичке: от демонтажа до последней розетки. Цена фиксируется в договоре, этапы принимаете по фото и на объекте.</p>
+      <div class="hero__btns">
+        <a href="#calc" class="btn btn--brick">Рассчитать стоимость</a>
+        <a href="#works" class="btn btn--ghost">Смотреть объекты</a>
+      </div>
+      <ul class="hero__facts">
+        <li><b>212</b><span>квартир сдано с 2016 года</span></li>
+        <li><b>3 года</b><span>гарантия на работы</span></li>
+        <li><b>0 ₽</b><span>выезд замерщика</span></li>
+      </ul>
+    </div>
+    <div class="hero__media ph ph--after">
+      <img src="img/hero.jpg" alt="Светлая гостиная после ремонта: светлые стены, дубовый пол, диван оливкового цвета" width="1280" height="1600" fetchpriority="high">
+      <div class="hero__tag"><span class="dot"></span>Объект на Чистопольской, 74 м² · сдан за 94 дня</div>
+    </div>
+  </div>
+  <svg class="hero__grid-bg" aria-hidden="true"><defs><pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="currentColor" stroke-width=".6"/></pattern></defs><rect width="100%" height="100%" fill="url(#g)"/></svg>
+</section>
+
+<!-- CALC -->
+<section class="section calc" id="calc">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Калькулятор</p>
+      <h2>Сколько стоит ваш ремонт</h2>
+      <p class="sub">Предварительная оценка работ и черновых материалов по ценам Казани на 2026 год. Точную смету составим после бесплатного замера.</p>
+    </div>
+    <form class="calc__box" id="calcForm" onsubmit="return false">
+      <div class="calc__fields">
+        <fieldset class="field">
+          <legend>Тип ремонта</legend>
+          <div class="seg" role="radiogroup">
+            <label><input type="radio" name="type" value="cosm"><span><b>Косметический</b><small>от 7 900 ₽/м²</small></span></label>
+            <label><input type="radio" name="type" value="cap" checked><span><b>Капитальный</b><small>от 14 500 ₽/м²</small></span></label>
+            <label><input type="radio" name="type" value="des"><span><b>Дизайнерский</b><small>от 23 000 ₽/м²</small></span></label>
+          </div>
+        </fieldset>
+
+        <div class="field">
+          <div class="field__row"><label for="area">Площадь квартиры</label><output id="areaOut">54 м²</output></div>
+          <input type="range" id="area" min="20" max="200" step="1" value="54">
+          <div class="range-scale"><span>20</span><span>110</span><span>200 м²</span></div>
+        </div>
+
+        <div class="field">
+          <div class="field__row"><span class="lbl">Санузлов</span></div>
+          <div class="stepper">
+            <button type="button" id="bathMinus" aria-label="Меньше">−</button>
+            <output id="bathOut">1</output>
+            <button type="button" id="bathPlus" aria-label="Больше">+</button>
+            <small>каждый санузел под ключ: плитка, сантехника, инсталляция</small>
+          </div>
+        </div>
+
+        <fieldset class="field">
+          <legend>Дополнительно</legend>
+          <div class="opts">
+            <label class="chk"><input type="checkbox" name="opt" value="demo"><span>Демонтаж старой отделки</span><em>650 ₽/м²</em></label>
+            <label class="chk"><input type="checkbox" name="opt" value="elec" checked><span>Электрика с нуля</span><em>1 900 ₽/м²</em></label>
+            <label class="chk"><input type="checkbox" name="opt" value="floor"><span>Теплый пол в санузле и кухне</span><em>38 000 ₽</em></label>
+            <label class="chk"><input type="checkbox" name="opt" value="ceil"><span>Натяжные потолки</span><em>950 ₽/м²</em></label>
+            <label class="chk"><input type="checkbox" name="opt" value="design"><span>Дизайн-проект</span><em>1 800 ₽/м²</em></label>
+            <label class="chk"><input type="checkbox" name="opt" value="clean"><span>Клининг после ремонта</span><em>220 ₽/м²</em></label>
+          </div>
+        </fieldset>
+      </div>
+
+      <aside class="calc__total" aria-live="polite">
+        <p class="calc__label">Ориентировочная стоимость</p>
+        <p class="calc__sum"><span id="sum">0</span> ₽</p>
+        <p class="calc__per">≈ <span id="per">0</span> ₽ за м²</p>
+        <div class="calc__term">
+          <div><small>Срок работ</small><b><span id="weeks">0</span> нед.</b></div>
+          <div><small>Бригада</small><b><span id="crew">0</span> чел.</b></div>
+        </div>
+        <ul class="calc__list" id="breakdown"></ul>
+        <a href="#request" class="btn btn--brick btn--wide" id="calcCta">Зафиксировать цену</a>
+        <p class="calc__note">Чистовые материалы (плитка, ламинат, сантехника) — по вашему выбору или со скидкой поставщика до 15%.</p>
+      </aside>
+    </form>
+  </div>
+</section>
+
+<!-- WORKS -->
+<section class="section works" id="works">
+  <div class="wrap">
+    <div class="head head--row">
+      <div>
+        <p class="eyebrow">До и после</p>
+        <h2>Три объекта этой осени</h2>
+      </div>
+      <div class="tabs" role="tablist" aria-label="Объекты">
+        <button role="tab" aria-selected="true" data-case="0">Гостиная</button>
+        <button role="tab" aria-selected="false" data-case="1">Кухня</button>
+        <button role="tab" aria-selected="false" data-case="2">Санузел</button>
+      </div>
+    </div>
+
+    <div class="ba" id="ba" style="--p:50">
+      <div class="ba__layer ba__base ph ph--after">
+        <img id="baAfter" src="img/case1-after.jpg" alt="" draggable="false" loading="lazy" decoding="async">
+        <span class="ba__lbl ba__lbl--l">До</span>
+      </div>
+      <div class="ba__clip">
+        <div class="ba__layer ba__top ph ph--before">
+          <img id="baBefore" src="img/case1-before.jpg" alt="" draggable="false" loading="lazy" decoding="async">
+        </div>
+      </div>
+      <span class="ba__lbl ba__lbl--r">После</span>
+      <div class="ba__handle" aria-hidden="true"><span></span></div>
+      <input class="ba__range" id="baRange" type="range" min="0" max="100" value="50" aria-label="Сравнить до и после">
+    </div>
+
+    <div class="case" id="caseInfo">
+      <div class="case__title"><h3 id="caseTitle"></h3><p id="caseAddr"></p></div>
+      <dl class="case__meta">
+        <div><dt>Площадь</dt><dd id="caseArea"></dd></div>
+        <div><dt>Срок</dt><dd id="caseTerm"></dd></div>
+        <div><dt>Смета</dt><dd id="caseCost"></dd></div>
+      </dl>
+      <p class="case__txt" id="caseTxt"></p>
+    </div>
+  </div>
+</section>
+
+<!-- STEPS -->
+<section class="section steps" id="steps">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Этапы работ</p>
+      <h2>Шесть шагов от замера до ключей</h2>
+      <p class="sub">Каждый этап закрывается актом. Оплата — по факту выполненного, без 100% предоплаты.</p>
+    </div>
+    <div class="steps__body" id="stepsBody">
+      <svg class="blueprint" id="blueprint" aria-hidden="true" preserveAspectRatio="none"><path id="bpBg" class="bp-bg"/><path id="bpLine" class="bp-line"/></svg>
+      <ol class="steps__list">
+        <li class="step"><span class="step__n">01</span><div><h3>Замер и обмерный план</h3><p>Инженер приезжает в удобное время, лазерным дальномером снимает размеры, проверяет стяжку, стены и проводку. План в DWG — в тот же день.</p><small>1 день · бесплатно</small></div></li>
+        <li class="step"><span class="step__n">02</span><div><h3>Смета и договор</h3><p>Расписываем каждую позицию: объем, цена, материал. Итоговая сумма фиксируется в договоре и не меняется без вашего письменного согласия.</p><small>2–3 дня</small></div></li>
+        <li class="step"><span class="step__n">03</span><div><h3>Черновые работы</h3><p>Демонтаж, перегородки, электрика и сантехника по проекту, стяжка, штукатурка по маякам. Скрытые работы фотографируем до закрытия.</p><small>3–5 недель</small></div></li>
+        <li class="step"><span class="step__n">04</span><div><h3>Инженерия и санузлы</h3><p>Разводка труб, инсталляции, гидроизоляция с проверкой проливом, теплый пол. Опрессовка системы под давлением — при вас.</p><small>2–3 недели</small></div></li>
+        <li class="step"><span class="step__n">05</span><div><h3>Чистовая отделка</h3><p>Плитка, шпаклевка под покраску, напольные покрытия, двери, плинтусы, свет. Отклонение стен — не больше 1 мм на 2 м.</p><small>3–6 недель</small></div></li>
+        <li class="step"><span class="step__n">06</span><div><h3>Сдача и клининг</h3><p>Проходим квартиру по чек-листу из 86 пунктов, устраняем замечания, вывозим мусор, делаем клининг. Вы получаете ключи и гарантийный паспорт.</p><small>2–4 дня</small></div></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- GUARANTEE -->
+<section class="section guarantee" id="guarantee">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Что входит</p>
+      <h2>Под ключ — значит без сюрпризов</h2>
+    </div>
+    <div class="g-grid">
+      <article class="g-card g-card--wide">
+        <h3>В стоимость уже включено</h3>
+        <ul class="ticks">
+          <li>Закупка и доставка черновых материалов</li>
+          <li>Подъем на этаж и вывоз мусора</li>
+          <li>Защита общих зон и лифта</li>
+          <li>Личный прораб и чат объекта</li>
+          <li>Фотоотчет каждый день</li>
+          <li>Согласование с управляющей компанией</li>
+        </ul>
+      </article>
+      <article class="g-card"><span class="g-num">3 года</span><h3>Гарантия на работы</h3><p>Если отошла плитка или треснул шов — приедем и исправим за свой счет в течение 5 рабочих дней.</p></article>
+      <article class="g-card"><span class="g-num">0,1%</span><h3>Неустойка за день просрочки</h3><p>Срок прописан в договоре. Задержали — платим вам за каждый день, без исключений.</p></article>
+      <article class="g-card"><span class="g-num">Этапами</span><h3>Оплата по факту</h3><p>Платите только за принятый этап. Деньги на материалы — по чекам, которые видны в чате.</p></article>
+      <article class="g-card media ph ph--work">
+        <img src="img/process.jpg" alt="Мастер выставляет маяки под штукатурку лазерным уровнем" loading="lazy" decoding="async">
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="section team">
+  <div class="wrap team__grid">
+    <div class="team__photo ph ph--person">
+      <img src="img/foreman.jpg" alt="Прораб Руслан Галиев на объекте" loading="lazy" decoding="async">
+    </div>
+    <div class="team__text">
+      <p class="eyebrow">Команда</p>
+      <h2>Свои мастера, а не случайные субподрядчики</h2>
+      <blockquote>«Я сам принимаю каждый этап. Если угол не 90 градусов — переделываем до того, как вы это заметите».</blockquote>
+      <p class="team__who"><b>Руслан Галиев</b>, главный прораб, 17 лет в отделке</p>
+      <ul class="team__stats">
+        <li><b>34</b><span>мастера в штате</span></li>
+        <li><b>6</b><span>бригад, по 3–5 человек</span></li>
+        <li><b>9</b><span>объектов в работе одновременно</span></li>
+      </ul>
+      <div class="team__strip ph ph--mat">
+        <img src="img/materials.jpg" alt="Образцы отделочных материалов: плитка, дуб, краска" loading="lazy" decoding="async">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section reviews">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Отзывы</p>
+      <h2>Что говорят хозяева квартир</h2>
+    </div>
+    <div class="r-grid">
+      <figure class="review">
+        <div class="stars" aria-label="5 из 5">★★★★★</div>
+        <blockquote>Делали двушку в ЖК «Светлая долина». Смета была 1 480 000 ₽, итог — 1 480 000 ₽. Каждый вечер фото в чате, на объект ездила раз в неделю, и то больше из любопытства.</blockquote>
+        <figcaption><b>Алсу Хамитова</b><span>капитальный ремонт, 61 м²</span></figcaption>
+      </figure>
+      <figure class="review">
+        <div class="stars" aria-label="5 из 5">★★★★★</div>
+        <blockquote>Вторичка 1978 года, проводка алюминиевая, стены кривые на 4 см. Ребята все показали, объяснили, что придется менять. Сдали на неделю раньше срока.</blockquote>
+        <figcaption><b>Дмитрий Соколов</b><span>капитальный ремонт, 48 м²</span></figcaption>
+      </figure>
+      <figure class="review">
+        <div class="stars" aria-label="5 из 5">★★★★★</div>
+        <blockquote>Брали с дизайн-проектом. Понравилось, что прораб сам предлагал, где сэкономить без потери вида: например, заменили итальянскую плитку на российскую того же формата.</blockquote>
+        <figcaption><b>Елена Миронова</b><span>дизайнерский ремонт, 92 м²</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section faq" id="faq">
+  <div class="wrap faq__grid">
+    <div class="head">
+      <p class="eyebrow">Вопросы</p>
+      <h2>Частые вопросы</h2>
+      <p class="sub">Не нашли свой — спросите в Telegram @example, отвечаем в течение часа.</p>
+    </div>
+    <div class="faq__list">
+      <details open><summary>Может ли итоговая цена вырасти?</summary><p>Только если вы сами решите добавить работы. Все позиции сметы фиксируются в договоре. Дополнительные работы оформляем отдельным соглашением с ценой до начала.</p></details>
+      <details><summary>Нужно ли мне присутствовать на объекте?</summary><p>Нет. Достаточно передать ключи. Ежедневные фотоотчеты, видеозвонок с прорабом по запросу и приемка этапов — в удобный вам день.</p></details>
+      <details><summary>Кто закупает материалы?</summary><p>Черновые закупаем мы, по чекам. Чистовые — на выбор: вы сами или мы через партнеров со скидкой до 15%. Доставка и подъем входят в стоимость.</p></details>
+      <details><summary>Работаете с ипотекой и рассрочкой?</summary><p>Да, есть рассрочка от банка-партнера на 12 месяцев без переплаты для сметы от 400 000 ₽. Также принимаем оплату по этапам.</p></details>
+      <details><summary>Делаете ли перепланировку?</summary><p>Делаем, если она не затрагивает несущие стены. Помогаем подготовить проект и согласовать перепланировку в БТИ.</p></details>
+      <details><summary>В какие районы выезжаете?</summary><p>Вся Казань, Иннополис, Высокая Гора, Осиново и Зеленодольск. Замер бесплатный в пределах 30 км от города.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- REQUEST -->
+<section class="section request" id="request">
+  <div class="wrap req__grid">
+    <div class="req__text">
+      <p class="eyebrow eyebrow--light">Заявка</p>
+      <h2>Запишитесь на бесплатный замер</h2>
+      <p>Перезвоним в течение 15 минут в рабочее время, согласуем день. Замер занимает около часа, смета готова через 2–3 дня.</p>
+      <ul class="req__contacts">
+        <li><a href="tel:+79000000000">+7 (900) 000-00-00</a></li>
+        <li>Telegram: @example</li>
+        <li>Казань, ул. Примерная, 1 · ежедневно 9:00–20:00</li>
+      </ul>
+    </div>
+    <form class="req__form" id="reqForm" novalidate>
+      <label>Имя<input name="name" type="text" autocomplete="name" placeholder="Как к вам обращаться" required></label>
+      <label>Телефон<input name="phone" type="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__" required></label>
+      <label>Тип объекта
+        <select name="obj">
+          <option>Новостройка без отделки</option>
+          <option>Новостройка с white box</option>
+          <option>Вторичное жилье</option>
+          <option>Частный дом</option>
+        </select>
+      </label>
+      <label>Комментарий<textarea name="msg" rows="3" placeholder="Например: 2 комнаты, 58 м², хотим заехать к лету"></textarea></label>
+      <input type="hidden" name="calc" id="calcHidden">
+      <p class="req__calc" id="reqCalc" hidden></p>
+      <label class="chk chk--light"><input type="checkbox" name="agree" checked required><span>Согласен на обработку персональных данных</span></label>
+      <button class="btn btn--brick btn--wide" type="submit">Отправить заявку</button>
+      <p class="req__msg" id="reqMsg" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__in">
+    <a href="#top" class="logo logo--light"><svg viewBox="0 0 32 32" width="26" height="26" aria-hidden="true"><rect x="3" y="20" width="26" height="8" fill="currentColor"/><rect x="7" y="12" width="18" height="6" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M11 10V4h10v6" fill="none" stroke="#D98A60" stroke-width="2.4"/></svg><span>Основа</span></a>
+    <p>Студия ремонта квартир под ключ. Казань, с 2016 года.</p>
+    <p>+7 (900) 000-00-00 · @example</p>
+    <p class="footer__small">© 2026 ООО «Основа». Сайт носит демонстрационный характер, бренд вымышленный.</p>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>

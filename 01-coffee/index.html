@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Зерно и пар — кофейня в Казани</title>
+  <meta name="description" content="Кофейня «Зерно и пар» на улице Баумана в Казани: своя обжарка, внимательные бариста, десерты и зерна на вынос.">
+  <meta name="theme-color" content="#3B2A22">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">К содержанию</a>
+
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="logo" href="#top" aria-label="Зерно и пар — на главную">
+        <svg class="logo__mark" viewBox="0 0 32 32" aria-hidden="true"><ellipse cx="16" cy="18" rx="9" ry="12" transform="rotate(-25 16 18)" fill="currentColor"/><path d="M10 26 C 16 20, 15 14, 22 9" stroke="#F7F1E8" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+        <span>Зерно и пар</span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Основная навигация">
+        <a href="#about">О нас</a>
+        <a href="#menu">Меню</a>
+        <a href="#beans">Зерна</a>
+        <a href="#atmosphere">Атмосфера</a>
+        <a href="#contacts">Контакты</a>
+        <a class="btn btn--small" href="#booking">Забронировать</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__media">
+        <img src="img/hero.jpg" alt="Чашка латте на деревянном столе у окна в утреннем свете" width="1600" height="900" fetchpriority="high">
+        <div class="steam" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+      </div>
+      <div class="container hero__content">
+        <p class="eyebrow eyebrow--light">Казань · ул. Баумана</p>
+        <h1 class="hero__title">Кофе, который<br>обжарили вчера.</h1>
+        <p class="hero__lead">Своя обжарка, спокойные завтраки и бариста, которые помнят, как вы любите. Первый капучино по утрам — со скидкой 20% до 10:00.</p>
+        <div class="hero__actions">
+          <a class="btn" href="#booking" data-mode="table">Забронировать столик</a>
+          <a class="btn btn--ghost" href="#booking" data-mode="takeaway">Заказать навынос</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <div class="container about__grid">
+        <div class="about__text reveal">
+          <p class="eyebrow">О нас</p>
+          <h2>Маленькая обжарка за&nbsp;стеной зала</h2>
+          <p>Мы обжариваем зерна сами — небольшими партиями по 5&nbsp;кг, два раза в неделю. Поэтому кофе в чашке всегда свежий: от ростера до вашей чашки проходит не больше десяти дней.</p>
+          <p>За стойкой — бариста с опытом чемпионатов и любовью к деталям. Подскажут, какой метод заваривания подойдет под настроение, и расскажут про ферму, откуда приехало зерно.</p>
+          <ul class="facts">
+            <li><strong>6</strong><span>сортов в&nbsp;обжарке</span></li>
+            <li><strong>10</strong><span>дней максимум с&nbsp;обжарки</span></li>
+            <li><strong>4</strong><span>бариста в&nbsp;команде</span></li>
+          </ul>
+        </div>
+        <figure class="about__photo reveal">
+          <img src="img/barista.jpg" alt="Бариста кофейни в льняном фартуке за стойкой" width="800" height="1000" loading="lazy">
+          <figcaption>Тимур, старший бариста</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="section menu" id="menu">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Меню</p>
+          <h2>Что заварить сегодня</h2>
+          <p class="muted">Альтернативное молоко — без доплаты. Объем указан для стандартной чашки.</p>
+        </div>
+        <div class="menu__grid">
+          <div class="menu__col reveal">
+            <h3>Кофе</h3>
+            <ul class="menu__list">
+              <li><span class="menu__name">Эспрессо<small>30 мл</small></span><span class="menu__price">160 ₽</span></li>
+              <li><span class="menu__name">Американо<small>250 мл</small></span><span class="menu__price">190 ₽</span></li>
+              <li><span class="menu__name">Капучино<small>300 мл</small></span><span class="menu__price">260 ₽</span></li>
+              <li><span class="menu__name">Флэт уайт<small>200 мл</small></span><span class="menu__price">270 ₽</span></li>
+              <li><span class="menu__name">Латте на&nbsp;овсяном<small>350 мл</small></span><span class="menu__price">290 ₽</span></li>
+              <li><span class="menu__name">Фильтр дня<small>V60, 300 мл</small></span><span class="menu__price">280 ₽</span></li>
+            </ul>
+          </div>
+          <div class="menu__col reveal">
+            <h3>Не&nbsp;кофе</h3>
+            <ul class="menu__list">
+              <li><span class="menu__name">Какао с&nbsp;маршмеллоу<small>300 мл</small></span><span class="menu__price">250 ₽</span></li>
+              <li><span class="menu__name">Матча-латте<small>300 мл</small></span><span class="menu__price">320 ₽</span></li>
+              <li><span class="menu__name">Чай с&nbsp;облепихой<small>чайник 500 мл</small></span><span class="menu__price">340 ₽</span></li>
+              <li><span class="menu__name">Лимонад клюква-розмарин<small>400 мл</small></span><span class="menu__price">280 ₽</span></li>
+            </ul>
+          </div>
+          <div class="menu__col reveal">
+            <h3>Десерты</h3>
+            <ul class="menu__list">
+              <li><span class="menu__name">Круассан с&nbsp;миндалем</span><span class="menu__price">220 ₽</span></li>
+              <li><span class="menu__name">Чак-чак по-домашнему</span><span class="menu__price">190 ₽</span></li>
+              <li><span class="menu__name">Баскский чизкейк</span><span class="menu__price">330 ₽</span></li>
+              <li><span class="menu__name">Морковный торт</span><span class="menu__price">310 ₽</span></li>
+              <li><span class="menu__name">Синнабон с&nbsp;кардамоном</span><span class="menu__price">240 ₽</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BEANS -->
+    <section class="section beans" id="beans">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Зерна на вынос</p>
+          <h2>Заберите вкус домой</h2>
+          <p class="muted">Пачки по 250&nbsp;г. Смелем под вашу турку, гейзер или&nbsp;кофемашину — бесплатно.</p>
+        </div>
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card__img"><img src="img/beans1.jpg" alt="Крафтовая пачка кофе на льняном фоне" width="800" height="800" loading="lazy"></div>
+            <div class="card__body">
+              <p class="card__origin">Эфиопия · Иргачефф</p>
+              <h3>Цветочный утренний</h3>
+              <p>Жасмин, бергамот, персик. Светлая обжарка для фильтра и&nbsp;воронки.</p>
+              <div class="card__foot"><span class="card__price">890 ₽</span><a class="link" href="#booking" data-mode="takeaway">Отложить пачку</a></div>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="card__img"><img src="img/beans2.jpg" alt="Пачка кофе, перевязанная бечевкой, на терракотовом фоне" width="800" height="800" loading="lazy"></div>
+            <div class="card__body">
+              <p class="card__origin">Колумбия · Уила</p>
+              <h3>Карамельный баланс</h3>
+              <p>Карамель, красное яблоко, какао. Средняя обжарка — универсальный выбор.</p>
+              <div class="card__foot"><span class="card__price">820 ₽</span><a class="link" href="#booking" data-mode="takeaway">Отложить пачку</a></div>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="card__img"><img src="img/beans3.jpg" alt="Пачка кофе на темном столе рядом с ручной кофемолкой" width="800" height="800" loading="lazy"></div>
+            <div class="card__body">
+              <p class="card__origin">Бразилия · Серрадо</p>
+              <h3>Шоколадный эспрессо</h3>
+              <p>Темный шоколад, орех, легкая пряность. Для эспрессо и&nbsp;молочных напитков.</p>
+              <div class="card__foot"><span class="card__price">760 ₽</span><a class="link" href="#booking" data-mode="takeaway">Отложить пачку</a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ATMOSPHERE -->
+    <section class="section atmosphere" id="atmosphere">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Атмосфера</p>
+          <h2>Место, где хочется остаться</h2>
+        </div>
+        <div class="gallery">
+          <figure class="gallery__item gallery__item--wide reveal"><img src="img/atm1.jpg" alt="Бариста наливает молоко в капучино" width="1200" height="800" loading="lazy"></figure>
+          <figure class="gallery__item gallery__item--tall reveal"><img src="img/atm2.jpg" alt="Уютный уголок с креслом, растениями и книгами" width="800" height="1000" loading="lazy"></figure>
+          <figure class="gallery__item gallery__item--wide reveal"><img src="img/atm3.jpg" alt="Свежеобжаренные зерна в охладителе ростера" width="1200" height="800" loading="lazy"></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="section reviews" id="reviews">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Отзывы</p>
+          <h2>Что говорят гости</h2>
+        </div>
+        <div class="reviews__grid">
+          <blockquote class="review reveal">
+            <p>«Лучший флэт уайт в центре. Прихожу перед работой, и бариста уже начинает готовить, когда я открываю дверь».</p>
+            <footer><strong>Алия</strong><span>гостья с 2024 года</span></footer>
+          </blockquote>
+          <blockquote class="review reveal">
+            <p>«Купил пачку Эфиопии на пробу — теперь беру каждую неделю. Дома заваривать стало интереснее».</p>
+            <footer><strong>Максим</strong><span>любитель воронки</span></footer>
+          </blockquote>
+          <blockquote class="review reveal">
+            <p>«Тихо, светло, можно поработать с ноутбуком. Чак-чак к кофе — отдельная любовь».</p>
+            <footer><strong>Екатерина</strong><span>дизайнер</span></footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKING -->
+    <section class="section booking" id="booking">
+      <div class="container booking__grid">
+        <div class="booking__intro reveal">
+          <p class="eyebrow eyebrow--light">Бронь и навынос</p>
+          <h2>Оставьте заявку — перезвоним за&nbsp;10&nbsp;минут</h2>
+          <p>Забронируем столик у окна или соберем заказ к вашему приходу. Можно и позвонить: <a href="tel:+79000000000">+7 (900) 000-00-00</a>.</p>
+        </div>
+        <form class="form reveal" id="form" novalidate>
+          <fieldset class="form__switch">
+            <legend class="visually-hidden">Тип заявки</legend>
+            <label><input type="radio" name="mode" value="table" checked><span>Столик</span></label>
+            <label><input type="radio" name="mode" value="takeaway"><span>Навынос</span></label>
+          </fieldset>
+          <div class="form__row">
+            <label class="field"><span>Имя</span><input type="text" name="name" autocomplete="given-name" required placeholder="Как к вам обращаться"></label>
+            <label class="field"><span>Телефон</span><input type="tel" name="phone" autocomplete="tel" required placeholder="+7 (900) 000-00-00"></label>
+          </div>
+          <div class="form__row">
+            <label class="field"><span>Дата</span><input type="date" name="date"></label>
+            <label class="field"><span>Время</span><input type="time" name="time" value="09:00"></label>
+          </div>
+          <label class="field" data-for="table"><span>Гостей</span>
+            <select name="guests"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5+</option></select>
+          </label>
+          <label class="field" data-for="takeaway" hidden><span>Что приготовить</span><textarea name="order" rows="3" placeholder="Например: два капучино на овсяном и круассан"></textarea></label>
+          <button class="btn btn--wide" type="submit">Отправить заявку</button>
+          <p class="form__msg" id="form-msg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- CONTACTS -->
+    <section class="section contacts" id="contacts">
+      <div class="container contacts__grid">
+        <div class="contacts__info reveal">
+          <p class="eyebrow">Как нас найти</p>
+          <h2>В пяти минутах от&nbsp;Кремля</h2>
+          <dl class="info">
+            <div><dt>Адрес</dt><dd>Казань, ул. Баумана, 00<br><span class="muted">вход со двора, вывеска с зерном</span></dd></div>
+            <div><dt>Телефон</dt><dd><a href="tel:+79000000000">+7 (900) 000-00-00</a></dd></div>
+            <div><dt>Часы работы</dt><dd>Пн–Пт: 7:30–21:00<br>Сб–Вс: 9:00–22:00</dd></div>
+          </dl>
+        </div>
+        <div class="map reveal" role="img" aria-label="Схема: кофейня на улице Баумана, рядом метро Кремлевская">
+          <svg viewBox="0 0 600 420" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <rect width="600" height="420" fill="#E9DCCB"/>
+            <path d="M-20 330 C 120 300, 200 360, 330 320 S 520 260, 640 300" stroke="#cfe0de" stroke-width="38" fill="none"/>
+            <g stroke="#F7F1E8" stroke-linecap="round" fill="none">
+              <path d="M60 -10 L 250 430" stroke-width="22"/>
+              <path d="M-10 140 L 610 90" stroke-width="14"/>
+              <path d="M420 -10 L 380 430" stroke-width="14"/>
+              <path d="M-10 250 L 610 210" stroke-width="10"/>
+            </g>
+            <path d="M60 -10 L 250 430" stroke="#B5673F" stroke-width="3" stroke-dasharray="2 10" stroke-linecap="round" opacity=".6"/>
+            <g fill="#dccbb6"><rect x="270" y="130" width="90" height="60" rx="6"/><rect x="460" y="120" width="110" height="70" rx="6"/><rect x="40" y="170" width="70" height="60" rx="6"/><rect x="440" y="240" width="120" height="50" rx="6"/></g>
+            <text x="150" y="60" font-family="Inter, sans-serif" font-size="14" fill="#6b5446" transform="rotate(66 150 60)">ул. Баумана</text>
+            <text x="470" y="360" font-family="Inter, sans-serif" font-size="13" fill="#5f7d7a">р. Казанка</text>
+          </svg>
+          <div class="map__pin"><span></span></div>
+          <div class="map__card"><strong>Зерно и пар</strong><span>ул. Баумана · 4 мин от м. Кремлевская</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <a class="logo logo--light" href="#top"><svg class="logo__mark" viewBox="0 0 32 32" aria-hidden="true"><ellipse cx="16" cy="18" rx="9" ry="12" transform="rotate(-25 16 18)" fill="currentColor"/><path d="M10 26 C 16 20, 15 14, 22 9" stroke="#3B2A22" stroke-width="2" fill="none" stroke-linecap="round"/></svg><span>Зерно и пар</span></a>
+        <p class="footer__note">Кофейня и обжарка. Казань, ул. Баумана.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Ссылки в подвале">
+        <a href="#menu">Меню</a><a href="#beans">Зерна</a><a href="#booking">Бронь</a><a href="#contacts">Контакты</a>
+      </nav>
+      <p class="footer__copy">© 2026 «Зерно и пар». Вымышленный бренд, концепт для портфолио.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

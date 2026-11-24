@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Анна Лис — 3D-визуализация интерьеров</title>
+  <meta name="description" content="Фотореалистичная 3D-визуализация интерьеров и экстерьеров для дизайнеров и застройщиков. Удаленно, 7 лет опыта.">
+  <meta name="theme-color" content="#E7E3DC">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Перейти к содержанию</a>
+
+  <header class="header" id="top">
+    <div class="header__inner wrap">
+      <a class="logo" href="#top" aria-label="Анна Лис — на главную">Анна&nbsp;Лис</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Открыть меню">
+        <span></span><span></span>
+      </button>
+      <nav class="nav" id="nav" aria-label="Основная навигация">
+        <a href="#works">Работы</a>
+        <a href="#compare">До / после</a>
+        <a href="#services">Услуги</a>
+        <a href="#process">Этапы</a>
+        <a href="#about">Обо мне</a>
+        <a class="nav__cta" href="#contact">Обсудить проект</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__media">
+        <img src="img/hero.jpg" alt="Фотореалистичный рендер гостиной в стиле японди: светлый дуб, льняной диван, утренний свет из окна" width="1600" height="900" fetchpriority="high">
+      </div>
+      <div class="hero__text wrap">
+        <p class="eyebrow reveal">3D-визуализация интерьеров · 7 лет</p>
+        <h1 class="hero__title reveal" id="hero-title">Анна Лис</h1>
+        <p class="hero__offer reveal">Показываю интерьер до&nbsp;того, как&nbsp;он&nbsp;построен, — так, что&nbsp;заказчик соглашается с&nbsp;первого показа.</p>
+        <div class="hero__actions reveal">
+          <a class="btn btn--dark" href="#works">Смотреть работы</a>
+          <a class="btn btn--ghost" href="#contact">Рассчитать проект</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORKS -->
+    <section class="section works" id="works" aria-labelledby="works-title">
+      <div class="wrap">
+        <div class="section__head">
+          <p class="eyebrow reveal">Портфолио</p>
+          <h2 class="section__title reveal" id="works-title">Избранные работы</h2>
+        </div>
+
+        <div class="filters reveal" role="group" aria-label="Фильтр работ по типу">
+          <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">Все</button>
+          <button class="filter" type="button" data-filter="flat" aria-pressed="false">Квартира</button>
+          <button class="filter" type="button" data-filter="house" aria-pressed="false">Дом</button>
+          <button class="filter" type="button" data-filter="commercial" aria-pressed="false">Коммерция</button>
+        </div>
+
+        <ul class="gallery" id="gallery">
+          <li class="card card--wide" data-type="flat">
+            <button class="card__btn" type="button" data-full="img/hero.jpg" data-caption="Гостиная в стиле японди · квартира 84 м², Москва">
+              <img src="img/hero.jpg" alt="Гостиная в стиле японди" loading="lazy" width="1600" height="900">
+              <span class="card__meta"><span class="card__tag">Квартира</span><span class="card__name">Гостиная японди</span></span>
+            </button>
+          </li>
+          <li class="card card--tall" data-type="house">
+            <button class="card__btn" type="button" data-full="img/bedroom.jpg" data-caption="Спальня в теплых тонах · загородный дом, Подмосковье">
+              <img src="img/bedroom.jpg" alt="Спальня в теплых терракотовых тонах" loading="lazy">
+              <span class="card__meta"><span class="card__tag">Дом</span><span class="card__name">Теплая спальня</span></span>
+            </button>
+          </li>
+          <li class="card" data-type="flat">
+            <button class="card__btn" type="button" data-full="img/kitchen.jpg" data-caption="Скандинавская кухня · квартира 62 м², Санкт-Петербург">
+              <img src="img/kitchen.jpg" alt="Скандинавская кухня с фасадами цвета шалфея" loading="lazy">
+              <span class="card__meta"><span class="card__tag">Квартира</span><span class="card__name">Скандинавская кухня</span></span>
+            </button>
+          </li>
+          <li class="card" data-type="house">
+            <button class="card__btn" type="button" data-full="img/house.jpg" data-caption="Загородный дом на закате · экстерьер, 240 м²">
+              <img src="img/house.jpg" alt="Загородный дом из дерева и бетона на закате" loading="lazy">
+              <span class="card__meta"><span class="card__tag">Дом</span><span class="card__name">Дом у соснового леса</span></span>
+            </button>
+          </li>
+          <li class="card" data-type="house">
+            <button class="card__btn" type="button" data-full="img/bath.jpg" data-caption="Ванная с микроцементом · загородный дом">
+              <img src="img/bath.jpg" alt="Ванная комната с микроцементом и латунным смесителем" loading="lazy">
+              <span class="card__meta"><span class="card__tag">Дом</span><span class="card__name">Ванная из микроцемента</span></span>
+            </button>
+          </li>
+          <li class="card" data-type="commercial">
+            <button class="card__btn" type="button" data-full="img/cafe.jpg" data-caption="Кофейня · коммерческое пространство 55 м², Казань">
+              <img src="img/cafe.jpg" alt="Интерьер кофейни с травертиновой стойкой" loading="lazy">
+              <span class="card__meta"><span class="card__tag">Коммерция</span><span class="card__name">Кофейня</span></span>
+            </button>
+          </li>
+          <li class="card card--wide" data-type="commercial">
+            <button class="card__btn" type="button" data-full="img/showroom.jpg" data-caption="Шоурум мебельной студии · коммерция 180 м²">
+              <img src="img/showroom.jpg" alt="Шоурум мебели с бетонным полом и ореховой мебелью" loading="lazy">
+              <span class="card__meta"><span class="card__tag">Коммерция</span><span class="card__name">Шоурум мебели</span></span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- BEFORE / AFTER -->
+    <section class="section compare" id="compare" aria-labelledby="compare-title">
+      <div class="wrap compare__grid">
+        <div class="compare__text">
+          <p class="eyebrow reveal">До / после</p>
+          <h2 class="section__title reveal" id="compare-title">От&nbsp;скетча к&nbsp;рендеру</h2>
+          <p class="lead reveal">Дизайнер присылает эскиз и&nbsp;план — я&nbsp;возвращаю картинку, по&nbsp;которой можно заказывать мебель. Потяните ползунок.</p>
+        </div>
+        <div class="ba reveal" id="ba" style="--pos: 50%">
+          <img draggable="false" class="ba__img" src="img/hero.jpg" alt="Готовый рендер гостиной" width="1600" height="900">
+          <div class="ba__before" aria-hidden="true">
+            <img draggable="false" loading="lazy" decoding="async" class="ba__img" src="img/sketch.jpg" alt="" width="1600" height="900">
+          </div>
+          <span class="ba__label ba__label--l" aria-hidden="true">Скетч</span>
+          <span class="ba__label ba__label--r" aria-hidden="true">Рендер</span>
+          <div class="ba__handle" aria-hidden="true"><span></span></div>
+          <input class="ba__range" type="range" min="0" max="100" value="50" aria-label="Сравнение: скетч и рендер, положение разделителя">
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section services" id="services" aria-labelledby="services-title">
+      <div class="wrap">
+        <div class="section__head">
+          <p class="eyebrow reveal">Услуги и цены</p>
+          <h2 class="section__title reveal" id="services-title">Что я делаю</h2>
+        </div>
+        <div class="price-grid">
+          <article class="price reveal">
+            <h3 class="price__title">Интерьер</h3>
+            <p class="price__value"><span class="price__from">от</span> 1&nbsp;200&nbsp;₽ <span class="price__unit">/ м²</span></p>
+            <ul class="price__list">
+              <li>3–4 ракурса на помещение</li>
+              <li>Подбор реальных материалов и мебели</li>
+              <li>Две итерации правок включены</li>
+              <li>Разрешение до 4K</li>
+            </ul>
+            <p class="price__note">Срок: 7–12 рабочих дней на квартиру</p>
+          </article>
+          <article class="price price--accent reveal">
+            <h3 class="price__title">Экстерьер</h3>
+            <p class="price__value"><span class="price__from">от</span> 25&nbsp;000&nbsp;₽ <span class="price__unit">/ ракурс</span></p>
+            <ul class="price__list">
+              <li>Дом или жилой комплекс</li>
+              <li>Ландшафт, вечерний и дневной свет</li>
+              <li>Сезонные версии по запросу</li>
+              <li>Подготовка для печати и рекламы</li>
+            </ul>
+            <p class="price__note">Срок: от 5 рабочих дней</p>
+          </article>
+          <article class="price reveal">
+            <h3 class="price__title">Анимация облета</h3>
+            <p class="price__value"><span class="price__from">от</span> 9&nbsp;000&nbsp;₽ <span class="price__unit">/ сек.</span></p>
+            <ul class="price__list">
+              <li>Пролет камеры по интерьеру или участку</li>
+              <li>Видео 30–60 секунд, 4K, 30 fps</li>
+              <li>Монтаж, музыка, цветокоррекция</li>
+              <li>Вертикальная версия для соцсетей</li>
+            </ul>
+            <p class="price__note">Срок: от 3 недель</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section process" id="process" aria-labelledby="process-title">
+      <div class="wrap">
+        <div class="section__head">
+          <p class="eyebrow reveal">Как мы работаем</p>
+          <h2 class="section__title reveal" id="process-title">Пять шагов</h2>
+        </div>
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step__num">01</span>
+            <h3 class="step__title">Бриф</h3>
+            <p>Получаю планы, развертки, референсы и&nbsp;список материалов. Уточняю ракурсы и&nbsp;сроки.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">02</span>
+            <h3 class="step__title">Моделирование</h3>
+            <p>Строю геометрию по&nbsp;чертежам с&nbsp;точностью до&nbsp;сантиметра, подбираю модели мебели.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">03</span>
+            <h3 class="step__title">Черновые ракурсы</h3>
+            <p>Присылаю «белые» кадры без материалов — согласуем композицию и&nbsp;камеру.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">04</span>
+            <h3 class="step__title">Свет и&nbsp;материалы</h3>
+            <p>Настраиваю освещение, фактуры, декор. Две итерации правок входят в&nbsp;стоимость.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">05</span>
+            <h3 class="step__title">Финал</h3>
+            <p>Отдаю рендеры в&nbsp;4K и&nbsp;исходные файлы сцены по&nbsp;договоренности.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="wrap about__grid">
+        <figure class="about__photo reveal">
+          <img src="img/portrait.jpg" alt="Анна Лис за рабочим местом с монитором" loading="lazy">
+        </figure>
+        <div class="about__text">
+          <p class="eyebrow reveal">Обо мне</p>
+          <h2 class="section__title reveal" id="about-title">Тихая работа со&nbsp;светом</h2>
+          <p class="lead reveal">Я&nbsp;Анна, архитектор по&nbsp;образованию. Семь лет визуализирую интерьеры для дизайнеров и&nbsp;застройщиков — удаленно, из&nbsp;любой точки, в&nbsp;вашем часовом поясе.</p>
+          <p class="reveal">Мне важно, чтобы рендер выглядел как фотография реального пространства: честный свет, настоящие материалы, никакой «пластиковой» картинки. Работаю в&nbsp;3ds Max, Corona и&nbsp;Unreal Engine.</p>
+          <dl class="facts reveal">
+            <div><dt>7 лет</dt><dd>в&nbsp;визуализации</dd></div>
+            <div><dt>320+</dt><dd>проектов</dd></div>
+            <div><dt>40+</dt><dd>студий-партнеров</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="section reviews" aria-labelledby="reviews-title">
+      <div class="wrap">
+        <div class="section__head">
+          <p class="eyebrow reveal">Отзывы</p>
+          <h2 class="section__title reveal" id="reviews-title">Говорят дизайнеры</h2>
+        </div>
+        <div class="review-grid">
+          <figure class="review reveal">
+            <blockquote>«Анна видит свет так&nbsp;же, как&nbsp;я&nbsp;его задумываю. Клиент утвердил проект кухни по&nbsp;первому же&nbsp;рендеру».</blockquote>
+            <figcaption><strong>Мария Волкова</strong><span>дизайнер интерьеров</span></figcaption>
+          </figure>
+          <figure class="review reveal">
+            <blockquote>«Работаем третий год. Сроки ни&nbsp;разу не&nbsp;сорваны, правки — быстро и&nbsp;без лишних вопросов».</blockquote>
+            <figcaption><strong>Илья Соколов</strong><span>руководитель студии</span></figcaption>
+          </figure>
+          <figure class="review reveal">
+            <blockquote>«Для нашего коттеджного поселка Анна сделала экстерьеры и&nbsp;облет — продажи стартовали еще на&nbsp;котловане».</blockquote>
+            <figcaption><strong>Екатерина Белова</strong><span>архитектор</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="wrap contact__grid">
+        <div class="contact__text">
+          <p class="eyebrow eyebrow--light reveal">Заявка</p>
+          <h2 class="section__title reveal" id="contact-title">Расскажите о&nbsp;проекте</h2>
+          <p class="lead reveal">Отвечу в&nbsp;течение дня, назову стоимость и&nbsp;сроки после просмотра чертежей.</p>
+          <ul class="contact__list reveal">
+            <li><span>Телефон</span>+7 (900) 000-00-00</li>
+            <li><span>Telegram</span>@example</li>
+          </ul>
+        </div>
+        <form class="form reveal" id="form" novalidate>
+          <div class="field">
+            <label for="f-name">Имя</label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="f-contact">Телефон или Telegram</label>
+            <input id="f-contact" name="contact" type="text" autocomplete="tel" required>
+          </div>
+          <div class="field">
+            <label for="f-type">Тип объекта</label>
+            <select id="f-type" name="type">
+              <option>Квартира</option>
+              <option>Дом</option>
+              <option>Коммерческое пространство</option>
+              <option>Экстерьер</option>
+              <option>Анимация облета</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-msg">Коротко о задаче</label>
+            <textarea id="f-msg" name="message" rows="4" placeholder="Площадь, количество помещений, сроки"></textarea>
+          </div>
+          <button class="btn btn--brass" type="submit">Отправить заявку</button>
+          <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <p class="footer__name">Анна Лис</p>
+      <p>3D-визуализация интерьеров и&nbsp;экстерьеров · удаленно</p>
+      <p>© 2026 · <a href="#top">Наверх</a></p>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Просмотр работы" hidden>
+    <button class="lightbox__close" type="button" aria-label="Закрыть">×</button>
+    <button class="lightbox__nav lightbox__nav--prev" type="button" aria-label="Предыдущая работа">‹</button>
+    <figure class="lightbox__fig">
+      <img loading="lazy" decoding="async" class="lightbox__img" src="" alt="">
+      <figcaption class="lightbox__cap"></figcaption>
+    </figure>
+    <button class="lightbox__nav lightbox__nav--next" type="button" aria-label="Следующая работа">›</button>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Код с нуля — онлайн-курс веб-разработки для новичков</title>
+<meta name="description" content="Курс веб-разработки с нуля за 4 месяца: HTML, CSS, JavaScript, React. Живые занятия, наставник, портфолио из 6 проектов.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="aura" aria-hidden="true"></div>
+
+<header class="header">
+  <div class="wrap">
+    <a class="logo" href="index.html"><span class="logo-mark">&lt;/&gt;</span>Код с нуля</a>
+    <nav class="nav" aria-label="Основная навигация">
+      <a href="index.html" aria-current="page">Главная</a>
+      <a href="program.html">Программа</a>
+      <a href="pricing.html">Тарифы</a>
+      <a href="pricing.html#faq">Вопросы</a>
+    </nav>
+    <a class="btn btn-primary header-cta" href="pricing.html#trial">Бесплатный урок</a>
+    <button class="burger" aria-label="Меню" aria-expanded="false" aria-controls="mnav"><span></span></button>
+  </div>
+</header>
+<nav class="mnav" id="mnav" aria-label="Мобильная навигация">
+  <a href="index.html" aria-current="page">Главная</a>
+  <a href="program.html">Программа</a>
+  <a href="pricing.html">Тарифы</a>
+  <a href="pricing.html#faq">Вопросы</a>
+  <a class="btn btn-primary" href="pricing.html#trial">Бесплатный урок</a>
+</nav>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Старт потока — 12 января</span>
+        <h1>Первый сайт через 3 недели. <span class="hl">Профессия</span> через 4 месяца</h1>
+        <p class="lead">Курс веб-разработки для тех, кто никогда не писал код. HTML, CSS, JavaScript и React — живые занятия, разбор каждой домашки и портфолио из шести проектов.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="pricing.html#trial">Попробовать бесплатно <span class="arr">→</span></a>
+          <a class="btn btn-ghost" href="program.html">Смотреть программу</a>
+        </div>
+        <div class="hero-meta">
+          <span><b>8</b> модулей</span>
+          <span><b>6–8 ч</b> в неделю</span>
+          <span>от <b>3 000 ₽</b> в месяц</span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-sticker"><b>✓</b>Без опыта и математики</div>
+        <div class="terminal" id="terminal" aria-label="Пример кода в терминале">
+          <div class="term-bar"><i></i><i></i><i></i><span>~/kod-s-nulya/first-site</span></div>
+          <div class="term-body" id="termBody" aria-hidden="true"></div>
+          <div class="term-badge" id="termBadge">Сайт опубликован</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ДЛЯ КОГО -->
+  <section class="section bg-light">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="eyebrow">для кого курс</span>
+        <h2 class="h2">Подойдет, если вы начинаете с чистого листа</h2>
+        <p class="lead">Средний возраст студентов — 29 лет. Половина учится по вечерам, не уходя с основной работы.</p>
+      </div>
+      <div class="cards-3">
+        <article class="card reveal">
+          <span class="card-tag">// 42% потока</span>
+          <div class="card-ico">01</div>
+          <h3>Хотите сменить профессию</h3>
+          <p>Работаете в продажах, логистике или офисе и хотите перейти в IT. Начнем с основ и доведем до первого собеседования.</p>
+        </article>
+        <article class="card reveal d1">
+          <span class="card-tag">// 31% потока</span>
+          <div class="card-ico">02</div>
+          <h3>Работаете рядом с разработкой</h3>
+          <p>Дизайнер, маркетолог или менеджер проектов. Научитесь говорить с программистами на одном языке и править верстку сами.</p>
+        </article>
+        <article class="card reveal d2">
+          <span class="card-tag">// 27% потока</span>
+          <div class="card-ico">03</div>
+          <h3>Хотите делать сайты на заказ</h3>
+          <p>Лендинги и сайты-визитки для малого бизнеса — понятный первый заработок на фрилансе уже во время учебы.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- РЕЗУЛЬТАТ -->
+  <section class="section-lg bg-dark">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="eyebrow">результат</span>
+        <h2 class="h2">Что вы будете уметь через 4 месяца</h2>
+        <p class="lead">Не теория ради теории: каждый навык закрепляем проектом, который пойдет в портфолио.</p>
+      </div>
+      <div class="skills">
+        <div class="skill reveal"><span class="num">01</span><div><h3>Верстать по макету из Figma</h3><p>Семантичный HTML, Flexbox и Grid, аккуратные отступы до пикселя.</p></div></div>
+        <div class="skill reveal d1"><span class="num">02</span><div><h3>Делать адаптив</h3><p>Сайт одинаково хорошо выглядит на телефоне, планшете и большом мониторе.</p></div></div>
+        <div class="skill reveal d2"><span class="num">03</span><div><h3>Писать на JavaScript</h3><p>Формы, фильтры, слайдеры, корзина — интерактив без готовых плагинов.</p></div></div>
+        <div class="skill reveal"><span class="num">04</span><div><h3>Работать с данными по API</h3><p>Загружать данные с сервера через fetch и выводить их на страницу.</p></div></div>
+        <div class="skill reveal d1"><span class="num">05</span><div><h3>Собирать приложения на React</h3><p>Компоненты, состояние, хуки и маршрутизация — база для junior-позиции.</p></div></div>
+        <div class="skill reveal d2"><span class="num">06</span><div><h3>Работать в команде через Git</h3><p>Ветки, pull request, код-ревью и публикация сайта на хостинге.</p></div></div>
+      </div>
+      <div class="result-stats">
+        <div class="stat reveal"><b>6</b><span>проектов в портфолио</span></div>
+        <div class="stat reveal d1"><b>38</b><span>уроков с практикой</span></div>
+        <div class="stat reveal d2"><b>73%</b><span>выпускников нашли работу за полгода</span></div>
+        <div class="stat reveal d3"><b>85 000 ₽</b><span>средняя стартовая зарплата junior</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ПРЕПОДАВАТЕЛИ -->
+  <section class="section">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="eyebrow">преподаватели</span>
+        <h2 class="h2">Учат практикующие разработчики</h2>
+        <p class="lead">Каждый ведет коммерческие проекты и проверяет домашние задания сам, без ассистентов-однодневок.</p>
+      </div>
+      <div class="teachers">
+        <article class="teacher reveal">
+          <div class="ph"><span class="ph-initials">МС</span><img src="img/teacher-marina.jpg" alt="Марина Соколова, преподаватель верстки" loading="lazy" decoding="async" onerror="this.remove()"></div>
+          <div class="teacher-body">
+            <h3>Марина Соколова</h3>
+            <div class="role">Frontend-лид · 9 лет в разработке</div>
+            <p>Ведет модули по HTML, CSS и адаптиву. Сверстала больше 200 сайтов для банков и интернет-магазинов.</p>
+            <div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">доступность</span></div>
+          </div>
+        </article>
+        <article class="teacher reveal d1">
+          <div class="ph"><span class="ph-initials">ИБ</span><img src="img/teacher-igor.jpg" alt="Игорь Беляев, преподаватель JavaScript" loading="lazy" decoding="async" onerror="this.remove()"></div>
+          <div class="teacher-body">
+            <h3>Игорь Беляев</h3>
+            <div class="role">Senior JS-разработчик · 11 лет</div>
+            <p>Отвечает за JavaScript и React. Объясняет сложное на примерах из жизни — студенты называют его лекции «сериалом».</p>
+            <div class="chips"><span class="chip">JavaScript</span><span class="chip">React</span><span class="chip">API</span></div>
+          </div>
+        </article>
+        <article class="teacher reveal d2">
+          <div class="ph"><span class="ph-initials">ДА</span><img src="img/teacher-dina.jpg" alt="Дина Ахмедова, карьерный наставник" loading="lazy" decoding="async" onerror="this.remove()"></div>
+          <div class="teacher-body">
+            <h3>Дина Ахмедова</h3>
+            <div class="role">Наставник и карьерный консультант</div>
+            <p>Сама пришла в разработку из бухгалтерии в 32 года. Готовит к собеседованиям и помогает собрать резюме и портфолио.</p>
+            <div class="chips"><span class="chip">Git</span><span class="chip">карьера</span><span class="chip">собеседования</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ПРОЕКТЫ -->
+  <section class="section bg-light">
+    <div class="wrap">
+      <div class="head-row">
+        <div class="head reveal">
+          <span class="eyebrow">проекты выпускников</span>
+          <h2 class="h2">Это сделали люди, которые<br>полгода назад не знали HTML</h2>
+        </div>
+        <a class="btn btn-ghost reveal" href="program.html">Как устроены проекты</a>
+      </div>
+      <div class="projects">
+        <article class="project reveal">
+          <div class="browser"><div class="b-bar"><i></i><i></i><i></i><span>pekarnya-kolos.ru</span></div>
+            <div class="b-view m-bakery" aria-hidden="true">
+              <div><div class="t1"></div><div class="t2"></div><div class="t3"></div><div class="btnm"></div></div>
+              <div class="cir"></div>
+              <div class="row"><div></div><div></div><div></div></div>
+            </div>
+          </div>
+          <div class="project-meta"><div><h3>Сайт пекарни с меню</h3><div class="who">Ольга, бывший администратор салона</div></div><div class="stack">HTML · CSS</div></div>
+        </article>
+        <article class="project reveal d1">
+          <div class="browser"><div class="b-bar"><i></i><i></i><i></i><span>tasks-board.app</span></div>
+            <div class="b-view m-todo" aria-hidden="true">
+              <div class="side"><div></div><div></div><div></div><div></div></div>
+              <div class="main"><div class="col"><i></i><i></i><i></i></div><div class="col"><i></i><i></i></div><div class="col"><i></i><i></i><i></i></div></div>
+            </div>
+          </div>
+          <div class="project-meta"><div><h3>Канбан-доска задач</h3><div class="who">Денис, инженер-сметчик</div></div><div class="stack">React</div></div>
+        </article>
+        <article class="project reveal">
+          <div class="browser"><div class="b-bar"><i></i><i></i><i></i><span>pulse-fit.ru</span></div>
+            <div class="b-view m-fit" aria-hidden="true">
+              <div class="big">Тренировки рядом с домом</div>
+              <div class="bars"><i style="height:40%"></i><i style="height:65%"></i><i style="height:52%"></i><i style="height:85%"></i><i style="height:70%"></i><i style="height:100%"></i></div>
+            </div>
+          </div>
+          <div class="project-meta"><div><h3>Лендинг фитнес-клуба</h3><div class="who">Анастасия, маркетолог</div></div><div class="stack">HTML · JS</div></div>
+        </article>
+        <article class="project reveal d1">
+          <div class="browser"><div class="b-bar"><i></i><i></i><i></i><span>pogoda-segodnya.app</span></div>
+            <div class="b-view m-weather" aria-hidden="true">
+              <div><div class="temp">+18°</div><div class="city">Казань · ясно</div></div>
+              <div class="sun"></div>
+              <div class="days"><div></div><div></div><div></div><div></div><div></div></div>
+            </div>
+          </div>
+          <div class="project-meta"><div><h3>Приложение погоды по API</h3><div class="who">Руслан, курьер</div></div><div class="stack">JS · fetch</div></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ФОТО-ПОЛОСА -->
+  <section class="section">
+    <div class="wrap photo-band">
+      <div class="ph reveal"><img src="img/students.jpg" alt="Студенты занимаются за ноутбуками" loading="lazy" decoding="async" onerror="this.remove()"><span class="ph-label">живой вебинар · вторник 19:00</span></div>
+      <div class="reveal d1">
+        <span class="eyebrow">как проходит учеба</span>
+        <h2 class="h2">Вы не останетесь один на один с кодом</h2>
+        <p class="lead">Два живых занятия в неделю, чат потока, где отвечают в течение часа, и код-ревью каждой домашки. Если застряли — созвон с наставником в тот же день.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="program.html#format">Формат обучения <span class="arr">→</span></a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ОТЗЫВЫ -->
+  <section class="section bg-light">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="eyebrow">отзывы</span>
+        <h2 class="h2">Что говорят выпускники</h2>
+      </div>
+      <div class="reviews">
+        <article class="review reveal">
+          <span class="before">было: менеджер склада</span>
+          <blockquote>«Боялась, что не потяну — в школе с информатикой не дружила. Оказалось, верстка больше про внимательность, чем про математику. Через пять месяцев вышла джуном в веб-студию».</blockquote>
+          <div class="review-who"><span class="ava">ЕК</span><div><b>Екатерина Ковалева</b><span>Junior frontend, Екатеринбург</span></div></div>
+        </article>
+        <article class="review reveal d1">
+          <span class="before">было: дизайнер</span>
+          <blockquote>«Больше всего ценю код-ревью. Игорь возвращал мою корзину четыре раза, и каждый раз было понятно почему. Теперь сам верстаю свои макеты и беру заказы дороже».</blockquote>
+          <div class="review-who"><span class="ava">АМ</span><div><b>Алексей Морозов</b><span>Дизайнер-верстальщик, фриланс</span></div></div>
+        </article>
+        <article class="review reveal d2">
+          <span class="before">было: учитель истории</span>
+          <blockquote>«Училась по вечерам после уроков, с двумя детьми. Записи занятий спасали. Дина помогла переписать резюме — после этого пошли приглашения на собеседования».</blockquote>
+          <div class="review-who"><span class="ava">НЛ</span><div><b>Наталья Лебедева</b><span>Frontend-разработчик, удаленно</span></div></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="wrap">
+      <div class="cta reveal">
+        <h2>Начните с бесплатного урока — напишите свою первую страницу за вечер</h2>
+        <p>45 минут, без регистрации карты. После урока куратор подскажет, какой тариф вам подойдет. <code>// мест в потоке: 40</code></p>
+        <div class="hero-actions">
+          <a class="btn btn-mint" href="pricing.html#trial">Записаться на урок <span class="arr">→</span></a>
+          <a class="btn btn-ghost-light btn" href="pricing.html">Тарифы и рассрочка</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="logo" href="index.html"><span class="logo-mark">&lt;/&gt;</span>Код с нуля</a>
+        <p>Онлайн-школа веб-разработки для новичков. Учим писать код, а не смотреть видео.</p>
+      </div>
+      <div><h4>Курс</h4><ul><li><a href="program.html">Программа</a></li><li><a href="program.html#format">Формат обучения</a></li><li><a href="pricing.html">Тарифы</a></li></ul></div>
+      <div><h4>Помощь</h4><ul><li><a href="pricing.html#faq">Частые вопросы</a></li><li><a href="pricing.html#trial">Бесплатный урок</a></li><li><a href="pricing.html#faq">Возврат денег</a></li></ul></div>
+      <div><h4>Контакты</h4><ul><li><a href="tel:+79000000000">+7 (900) 000-00-00</a></li><li><a href="#">Telegram @example</a></li><li>Пн–Пт, 10:00–20:00 мск</li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 «Код с нуля». Демо-сайт, бренд вымышленный.</span><span class="mono">build: v4.2 · ok</span></div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
